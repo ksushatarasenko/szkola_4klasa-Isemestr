@@ -303,7 +303,7 @@ p{
     display: flex;
     align-items: center!important;
     gap: 2px;
-    padding: 2%;
+    padding: 1%;
     /* width: 1000px; */
  }
  .three img{
@@ -476,7 +476,7 @@ p{
 .image{
    width: 80%;
    /* height: 800px; */
-   padding: 2%;
+   padding: 1%;
    display: flex;
    justify-content: center;
    flex-direction: column;

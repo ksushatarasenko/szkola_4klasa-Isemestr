@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №3</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Повторення вивченого у 3 класі. Письмове множення і ділення</h1>
+            <h2>№003 - Обчислення способом округлення. Розв’язування рівнянь. Розв’язування задач двома способами. (с.
+                7-9, № 25-34)</h2>
+            <!--  -->
+            <!-- 25 -->
+            <h4>25. Вибери круглі числа серед поданих. Запиши їх.</h4>
+            <p class="red">Числа, які закінчуються нулем, називають круглими числами.</p>
+            <div id="quiz-form">
+                <div class="questions">
+                    <div class="question" data-correct="0,2,3,4,6,9">
+                        <div class="displayFlex italic flexNowrap" style="margin-left: -7%;">
+                            <label>
+                                <input type="checkbox" name="q1" value="0" /> 390
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="1" /> 45
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="2" /> 500
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="3" /> 70
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="4" /> 210
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="5" /> 5
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="6" /> 1000
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="7" /> 67
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="8" /> 555
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="9" /> 10
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="checkAnswers" onclick="checkAnswersLabel()">Chek</button>
+                <p id="q1-result" style="width: 20%;"></p>
+            </div>
+            <hr>
+            <!-- end 25 -->
+            <!-- 26 -->
+            <h4>26. Для кожного із чисел напиши(через кому без пробіду) два круглі числа, між якими воно міститься.</h4>
+            <div class="question-set" id="set26">
+                <div class="dialog italic ">
+                    <div class="three">
+                        <div>
+                            <div class="colors">
+                                <p class="p20 italic ">155 => <span class="blue">150,160</span></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">37 => <input type="text" data-answer="30,40" class="line_1"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="colors">
+                                <p class="p20">299 => <input type="text" data-answer="290,300" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">55 => <input type="text" data-answer="50,60" class="line_1"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="colors">
+                                <p class="p20">127 => <input type="text" data-answer="120,130" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">584 => <input type="text" data-answer="580,590" class="line_1"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <button onclick="checkAnswersTrue('set26')">Check</button>
+            </div>
+            <hr>
+            <!-- end 26 -->
+            <!-- 27 -->
+            <h4>27. Для кожного із чисел назви два розрядні числа третього розряду, між якими воно міститься.</h4>
+            <div class="question-set" id="set27">
+                <div class="dialog italic ">
+                    <div class="three">
+                        <div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="blue">100 </span>
+                                    <= 148=> <span class="blue"> 200</span>
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20"> <input type="text" data-answer="200" class="line_6">
+                                    <= 285=> <input type="text" data-answer="300" class="line_6">
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="colors">
+                                <p class="p20"> <input type="text" data-answer="700" class="line_6">
+                                    <= 730=> <input type="text" data-answer="800" class="line_6">
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20"> <input type="text" data-answer="800" class="line_6">
+                                    <= 899=> <input type="text" data-answer="900" class="line_6">
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="colors">
+                                <p class="p20"> <input type="text" data-answer="400" class="line_6">
+                                    <= 444=> <input type="text" data-answer="500" class="line_6">
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20"> <input type="text" data-answer="500" class="line_6">
+                                    <= 580=> <input type="text" data-answer="600" class="line_6">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <button onclick="checkAnswersTrue('set27')">Check</button>
+            </div>
+            <hr>
+            <!-- end 27 -->
+            <!-- 28 -->
+            <h4>28. Обчисли способом округлення за зразком.</h4>
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpS3R-pEFHo7WqdCQ?embed=1&width=1286&height=388" alt="">
+            </div>
+            <h5 style="text-align: center;"><b>Зразок:</b> У сумі 140 + 190 подамо доданок 190 як різницю чисел 200 і
+                10. <br> 140+190=140+200–10=340–10=330.</h5>
+            <div class="question-set" id="set28">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p20 italic ">140 + 190 = <span class="blue">140 + 200 – 10 = 340 – 10 = 330</span></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">567 + 97 = <input type="text" data-answer="567 + 100 - 3 = 667 - 3 = 664"
+                                class="line_3"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">267 + 379 = <input type="text" data-answer="270 + 380 - 3 - 1 = 650 - 4 = 646"
+                                class="line_3"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">777 + 197 = <input type="text" data-answer="780 + 200 - 3 - 3 = 980 - 6 = 974"
+                                class="line_3"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">746 - 390 = <input type="text" data-answer="750 - 400 + 4 + 10 = 350 + 14 = 364"
+                                class="line_3"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">473 - 195 = <input type="text" data-answer="475 - 200 + 2 + 5 = 275 + 7 = 282"
+                                class="line_3"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbutton">
+                <button onclick="checkAnswersTrue('set28')">Check</button>
+                <div>
+                    <button onclick="toggleHints('hints28')">answer</button>
+                    <div id="hints28" style="display: none; width: 250%;">
+                        <p class="blue">140+190=140+200–10=340–10=330</p>
+                        <p> 567 + 97 = 570 + 100 - 3 - 3 = 670 - 6 = 664</p>
+                        <p>267 + 379 = 270 + 380 - 3 - 1 = 650 - 4 = 646</p>
+                        <p>777 + 197 = 780 + 200 - 3 - 3 = 980 - 6 = 974</p>
+                        <p>746 - 390 = 750 - 400 + 4 + 10 = 350 + 14 = 364</p>
+                        <p>473 - 195 = 475 - 200 + 2 + 5 = 275 + 7 = 282</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- end 28 -->
+            <!-- 29 -->
+            <h4>29. Розв’яжи рівняння. </h4>
+            <p>Розв'яжи у зошиті</з>
+            <div class="three p24 question-set" id="set29">
+                <div class="dialog italic">х – 288 = 685
+                    <div class="colors">
+                        <p class="p20"><input type="text" data-answer="973" class="line_8"></p>
+                    </div>
+                </div>
+                <div class="dialog italic">с – 532 = 380
+                    <div class="colors">
+                        <p class="p20"><input type="text" data-answer="912" class="line_8"></p>
+                    </div>
+                </div>
+                <div class="dialog italic">790 + а = 967
+                    <div class="colors">
+                        <p class="p20"><input type="text" data-answer="177" class="line_8"></p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="checkAnswersTrue('set29')">Check</button>
+            <hr>
+            <!-- end 29 -->
+            <!-- 30 -->
+            <h4>30. Розв’яжи задачу двома способами.</h4>
+            <div class="two">
+                <div class="zadacza">
+                    <p>Учасників пісенного фестивалю перевозили двома автобусами, в одному з яких було 8 пасажирських
+                        місць, а в іншому — 12. Кожний автобус зробив по 3 рейси. Скільки всього учасників перевезли
+                        ці автобуси?</p>
+                    <div class="p20">
+                        <ol class="marginLeft">
+                            <li>Скільки пасажирів може вмістити кожний автобус за один рейс?</li>
+                            <li>Скільки рейсів зробив кожний автобус?</li>
+                            <li>Скільки пасажирів перевіз кожний автобус за всі три рейси?</li>
+                            <li>Скільки учасників перевезли обидва автобуси разом?</li>
+                        </ol>
+                    </div>  
+                </div>
+                <div class="image" style="width: 130%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpVEPSHY3ehPVti0w?embed=1&width=1618&height=616" alt="30">
+                </div>
+            </div>
+            <div class="question-set" id="set30">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p20"><b>Відповідь:</b> всього автобусами перевезли <input type="text"
+                                data-answer="60" class="line_6"> учасників.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="flexbutton">
+                <button onclick="checkAnswersTrue('set30')">Check</button>
+            </div>
+            <!-- end 30 -->
+            <!-- 31 -->
+            <h4>31. Чи можна розв’язати цю задачу двома способами?</h4>
+            <div class="two">
+                <div class="image">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpYB3vkyAW2ak9ozQ?embed=1&width=1382&height=834" alt="31">
+                </div>
+                <div class="zadacza">
+                    <p>Яблучний сік розлили в 4 трилітрові банки й у 5 дволітрових. Скільки всього літрів соку розлили?</p>
+                    <div class="p20">
+                        <ol class="marginLeft">
+                            <li>Скільки літрів соку в одній трилітровій банці?</li>
+                            <li>Скільки всього трилітрових банок?</li>
+                            <li>Скільки літрів соку розлили в усі трилітрові банки разом?</li>
+                            <li>Скільки літрів соку в одній дволітровій банці?</li>
+                            <li>Скільки всього дволітрових банок?</li>
+                            <li>Скільки літрів соку розлили в усі дволітрові банки разом?</li>
+                            <li>Як знайти загальну кількість літрів соку?</li>
+                        </ol>
+                    </div>  
+                </div>
+                
+            </div>
+            <div class="question-set" id="set31">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p20">Відповідь: всього розлили <input type="text"
+                                data-answer="22" class="line_8"> літри соку.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbutton">
+                <button onclick="checkAnswersTrue('set31')">Check</button>
+                <div>
+                    <button onclick="toggleHints('hints31')">answer</button>
+                    <div id="hints31" style="display: none;">
+                        <div class="two" style="width: 300%;">
+                            <div>
+                                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpZSrzRGdixriV4OQ?embed=1&width=1264&height=698" alt="31-1">
+                            </div>
+                            <div>
+                                <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfpa4x4q7-JxD9q6rw?embed=1&width=1264&height=698" alt="31-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end 31 -->
+            <!-- 32 -->
+            <h4>32. Поділи фігури на дві групи. За якою ознакою ти це зробив(ла)?</h4>
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpbYSptptlFyy1A1A?embed=1&width=1150&height=204" alt="32">
+            </div>
+            <div class="flexbutton">
+                <div>
+                    <button onclick="toggleHints('hints32')">answer</button>
+                    <div id="hints32" style="display: none;">
+                        <p><b>Фігури можна поділити на дві групи за кількістю сторін:</b></p>
+                        <ul>
+                            <li>Многокутники (фігури зі сторонами):</li>
+                            <li>Криволінійні фігури (без сторін):</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end 32 -->
+
+            <h4>33. <a href="../optima/lesson2.html" target="_blank">Optima - Урок 2. Розв’язування рівнянь</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+        </main>
+    </div>
+
+    <script src="../../scriptMatemat.js"></script>
+</body>
+
+</html>

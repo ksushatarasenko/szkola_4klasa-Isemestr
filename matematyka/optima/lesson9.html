@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №009</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Багатоцифрові числа</h1>
+            <h2>Урок 9. Тисяча. Лічба тисячами</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127101&authkey=!AKrxjFoXceD6ZuE" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/0da9f8dbfb4c4420bf03f253eb956a22?themeId=45&templateId=38&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127100&authkey=!AF9tSQ1OHsNE8Hw" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1)Укажи значення виразу: <span class="red italic">190 + 230 – 50 =</span></p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 370
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 410
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 440
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="4">
+                    <p class="vopros">2) Укажи значення виразу: <span class="red italic"> 52 – 8· 3 + 7</span></p>
+                    <label>
+                        <input type="radio" name="q2" value="4"> 35
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="5"> 38
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="6"> 24
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="36">
+                    <p class="vopros">3) Установи відповідність: <span class="red italic">13 тис. – 4 тис. … 8 тис.</span></p>
+                    <label>
+                        <input type="radio" name="q3" value="36"> >
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="32"> <
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="33"> =
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Установи відповідність: <span class="red italic">6 тис. + 5 тис. … 12 тис.</span></p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> >
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> <
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> =
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div> <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">5) Установи відповідність: <span class="red italic">7 тис. + 8 тис. … 15 тис.</span></p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> >
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> <
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> =
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div> <hr>
+                <div class="question " data-correct="2">
+                    <p class="vopros zadacha">6) Мобільний телефон коштує 3 тис. гривень, а планшет — 9 тис. На скільки тисяч гривень планшет дорожчий від мобільного телефона?</p>
+                    <div class="two">
+                        <div >
+                            <label>
+                                <input type="radio" name="q6" value="1"> на 3 тис.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q6" value="2"> на 6 тис.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q6" value="3"> на 12 тис.
+                            </label><br>
+                        </div>
+                        <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127103&authkey=%21AImHfaoRoo1s7M8&width=1181&height=1181" alt="img 9" style="width: 450px;height: 450px;">
+                    </div>
+                    
+                    <p class="marker" id="q6-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker correct';
+                            } else {
+                            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker incorrect';
+                        }
+
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

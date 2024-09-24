@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №052</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 52. Прості задачі, задані у прямій і непрямій формах</h2>
+            <h3>Сьогодні ми будемо обчислювати вирази, складати та  розв’язувати задачі, повторимо виконання дій з іменованими числами.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127413&authkey=!ALaVKsSaeOjH8J8" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h2>Пригадай.</h2><br>
+                <div class="image">
+                    <img
+                        src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127414&authkey=%21AKe8YmVe7tQmM6M&width=1082&height=288">
+                </div><br>
+                <div>
+                    <p class="p">Щоб знайти <span class="blue utalic">час</span>, треба <span class="blue utalic">відстань</span> поділити на <span class="blue utalic">швидкість</span>.</p>
+                    <p class="p">Щоб знайти <span class="blue utalic">швидкість</span>, треба <span class="blue utalic">відстань</span> поділити на <span class="blue utalic">час</span>.</p>
+                    <p class="p">А щоб знайти <span class="blue utalic">відстань</span>
+                        , треба <span class="blue utalic">швидкість</span>
+                         рухомого об’єкта помножити на <span class="blue utalic">час</span>
+                        , за який він подолав цю відстань.</p>
+                </div>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pbc61swka21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127412&authkey=!AIDSf7CRdBeNxKE" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Усередині конструкції, що має форму куба, зробили перекриття (його позначено
+                        зеленим кольором). Які чоловічки опинилися вище від цього перекриття? <br> <img
+                            src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127411&authkey=%21ADXZGEwA932IdE4&width=352&height=302"
+                            alt="img52-1" style="width: 200px; height: 150px;">
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> Синій та жовтий
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> Синій та блакитний
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> Зелений та жовтий
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Установи відповідність між правилами та їх математичним записом: <span
+                            class="red italic">щоб знайти час руху, треба відстань, пройдену за цей час, поділити на
+                            швидкість руху</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> v = s : t
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> t = s : v
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> s = v &#8901; t
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Установи відповідність між правилами та їх математичним записом: <span
+                            class="red italic">щоб знайти швидкість руху, потрібно відстань поділити на час, за який ця
+                            відстань пройдена
+                        </span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> v = s : t
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> t = s : v
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> s = v &#8901; t
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">4) Установи відповідність між правилами та їх математичним записом: <span
+                            class="red italic">щоб знайти відстань, потрібно швидкість помножити на час руху</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> v = s : t
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> t = s : v
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> s = v &#8901; t
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Укажи число, яке є значенням виразу; виконай додавання у стовпчик, не
+                        перетворюючи у менші одиниці вимірювання: <span class="red italic">27 т 480 кг + 18 т 693
+                            кг</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> 8 т 787 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> 46 т 173 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> 45 т 073 кг
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">6) Відстань від аеропорту до міста 30 км; це на 15 км далі, ніж від аеропорту до
+                        селища. Яка відстань від аеропорту до селища?
+                    </p>
+                    <div class="vidpovid p">
+                        <button onclick="toggleAnswer(2)" class="answ">відповідь</button>
+                        <div id="answer2" class="answer blue">
+                            <p>Щоб знайти відстань від аеропорту до селища, можна відняти 15 км від відстані від
+                                аеропорту до міста.</p>
+                            <p>Відстань від аеропорту до міста — 30 км. Це на 15 км більше, ніж відстань від аеропорту
+                                до селища.</p>
+                            <p>Отже, відстань від аеропорту до селища дорівнює: <br>
+
+                                30   км − 15  км = 15  км
+                                 <br>
+                                Таким чином, відстань від аеропорту до селища становить 15 км.</p>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 2 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 15 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 45 км
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div>
+                <hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127415&authkey=!ANPdkGutQF7UIBQ&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

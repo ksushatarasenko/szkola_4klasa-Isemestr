@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №3</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Звуки і букви. Склад. Наголос. Звуко-буквений аналіз слів</h1>
+            <h2>Урок 3. Вимова та правопис сумнівних приголосних, що піддаються асиміляції (просьба, боротьба, нігті, кігті)</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127081&authkey=!AKmkO_FQare1FCI" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/b478652df6a445ea91100a9dd5c60833?themeId=22&templateId=71&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127080&authkey=!AM3LXtG5KbDZlDc" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="т">
+                    <p>Укажи пропущену букву у слові боро…ьба</p>
+                    <label>
+                        <input type="radio" name="q1" value="т"> т
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="ч"> ч
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="д"> д
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="доріженька">
+                    <p>Укажи перевірне слово до слова доріжка</p>
+                    <label>
+                        <input type="radio" name="q2" value="дорогий"> дорогий
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="дорога"> дорога
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="доріженька"> доріженька
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="с">
+                    <p>3) Укажи пропущену букву у слові про…ьба</p>
+                    <label>
+                        <input type="radio" name="q3" value="ц"> ц
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="з"> з
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="с"> с
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="діжка">
+                    <p>4) Укажи слово із сумнівним приголосним</p>
+                    <label>
+                        <input type="radio" name="q4" value="праця"> праця
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="пташка"> пташка
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="діжка"> діжка
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.textContent = "Правильно!";
+                            resultElement.className = 'marker correct';
+                        } else {
+                            resultElement.textContent = "Неправильно!";
+                            resultElement.className = 'marker incorrect';
+                        }
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+</body>
+</html>

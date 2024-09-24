@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка знань</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Звуки і букви. Склад. Наголос. Звуко-буквений аналіз слів</h1>
+            <h2>Перевірка знань</h2>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="звуки">
+                    <p class="vopros">1) Укажи, як називаються найменші одиниці мовного потоку, з яких у мові складаються слова: 
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="літери"> літери
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="звуки"> звуки
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="букви"> букви
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="38">
+                    <p class="vopros">2) Укажи, скільки звуків налічує звукова система української мови:</p>
+                    <label>
+                        <input type="radio" name="q2" value="42"> 42
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="36"> 36
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="38"> 38
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="п">
+                    <p class="vopros">3) Укажи, який звук не є дзвінким:</p>
+                    <label>
+                        <input type="radio" name="q3" value="д"> [д]
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="з"> [з]
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="п"> [п]
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="так">
+                    <p class="vopros">4) Укажи, чи правильно записані слова (вогко, легко, нігті):</p>
+                    <label>
+                        <input type="radio" name="q4" value="ні"> ні
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="так"> так
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="кіхті">
+                    <p class="vopros">5) Укажи, у якому слові допущено помилку (кіхті, дьогтю, дігтяр):</p>
+                    <label>
+                        <input type="radio" name="q5" value="дігтяр"> дігтяр
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="кіхті"> кіхті
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="дьогтю"> дьогтю
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div>
+                <div class="question" data-correct="т">
+                    <p class="vopros">6) Укажи зайвий звук у ряді: [б], [г], [з], [л], [т]:</p>
+                    <label>
+                        <input type="radio" name="q6" value="з"> [з]
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="т"> [т]
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="б"> [б]
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.textContent = "Правильно!";
+                            resultElement.className = 'marker correct';
+                        } else {
+                            resultElement.textContent = "Неправильно!";
+                            resultElement.className = 'marker incorrect';
+                        }
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №069</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 5. Площа фігури</h1>
+            <h2>Урок 69. Площа прямокутника</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Сьогодні ти будеш порівнювати фігури, визначати площу прямокутника, розв’язувати задачі та обчислювати вирази.</h3>
+            <div class="p" >
+                <a href="https://elpom.com.ua/training/matematichnij-trenazher-br-dilennya-vid-1-do-10-br/" target="_blank" style="color: rgb(210, 33, 154);">Математичний тренажер. Ділення чисел від 1 до 10</a>
+            </div>
+        <!--  -->
+            
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130876&authkey=!AFxjNh5N0xqpLFM" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+           <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130877&authkey=%21AJjcgTa59gc3LNo&width=1250&height=242" alt="69-1">
+           </div>
+            
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=ph14ko3g220" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+           
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130875&authkey=!ADNr3qDx-fGqsm8" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи вираз, числове значення якого: <span class="red">1011</span> <br>
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q1" value="1"> 
+                        340 – 240 : 2 + 568 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 400 + 123 • 7 – 250 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> (24 003 – 17 360) • 4 
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи число, яке позначає площу прямокутника, довжина якого дорівнює 8 см, а ширина – 2 см:<br>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 16 см<sup>2</sup> 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 10 см<sup>2</sup>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 20 см<sup>2</sup>
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) З однієї станції в протилежних напрямах вирушили одночасно два потяги. Один рухався зі швидкістю 55 км/год , а другий – 60 км/год . Яка відстань буде між ними через 2 год після початку руху? <br>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 60 + 55 • 2 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> (60 + 55) • 2 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 60• 2 + 55 
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130878&authkey=!ANE_xfWvVOAD3VA&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

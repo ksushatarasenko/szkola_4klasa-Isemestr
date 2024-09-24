@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №072</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 5. Площа фігури</h1>
+            <h2>Урок 72. Знаходження сторони прямокутника за його площею та іншою стороною</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;На тебе сьогодні чекають цікаві завдання та математичні відкриття! Будеш досліджувати можливість знайти довжину сторони прямокутника за відомою площею та відомою стороною, шукати різні способи розв’язування задач, вправлятимешся у вмінні виконувати арифметичні дії.</h3>
+            <div class="p" >
+                <a href="https://elpom.com.ua/training/matematychni-trenazher-mnozhennya-chysel-2-9/#google_vignette" target="_blank" style="color: rgb(210, 33, 154);">Математичні тренажери. Множення чисел 2-9</a>
+            </div>
+        <!--  -->
+            
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130895&authkey=!ALih2w_6O-_eq-g" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+           
+            
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=p6p4yjndc24" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+           
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130895&authkey=!ALih2w_6O-_eq-g" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу, виконай множення у стовпчик: <span class="red">3612 · 7</span> <br>
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q1" value="1"> 25 284
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 35 284
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 26 284
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи число, яке є показником довжини столу, площа цього столу 770 дм<sup>2</sup>, а ширина - 70 дм:<br>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 7 дм
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 11 дм
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 7 cм
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Кінь пробіг 1500 м за 5 хв, після чого протягом 8 хв пройшов 240 м ґрунтовою дорогою і 560 м – стежкою. У скільки разів більша швидкість бігу коня, ніж швидкість його ходи?<br>
+                    <label>
+                        <input type="radio" name="q3" value="1"> (1500 : 5) : ((560 + 240) : 8)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> (1500 : 5) : (560 + 240 : 8)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> (1500 : 5) : 560 + 240 : 8
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130893&authkey=!AF-7OnP-rOcDYxk&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

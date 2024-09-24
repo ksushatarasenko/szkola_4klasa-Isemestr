@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №6</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Повторення вивченого у 3 класі. Письмове множення і ділення</h1>
+            <h2>Тема 6. Вирази зі змінною. Закони додавання і множення.</h2>
+            <!-- start -->
+
+            <!-- 56 -->
+            <h4>56. Які з чисел діляться на 5?<br>
+                Яка ознака подільності числа на 5?</h4>
+            <div style="position: relative;">
+                <div id="quiz-form-56">
+                    <div class="questions">
+                        <div class="question" data-correct="1,2,4,5,7,9">
+                            <div class="displayFlex italic flexNowrap" style="margin-left: -7%;">
+                                <label>
+                                    <input type="checkbox" name="q1" value="0" /> 67
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="1" /> 20
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="2" /> 15
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="3" /> 44
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="4" /> 25
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="5" /> 35
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="6" /> 33
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="7" /> 105
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="8" /> 99
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="q1" value="9" /> 500
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-56', 'q56-result')">Chek</button>
+                    <p id="q56-result" style="width: 20%;"></p>
+                </div>
+                <div class="image" style="width: 13%;position: absolute;top: 54%;left: 20%;">
+                    <img src="https://irinakorobko.at.ua/Photo/01_1.jpg" alt="">
+                </div>
+            </div>
+            <div class="hint2-container" onclick="toggleHint2(this)">
+                <div class="hint2-header">
+                    
+                </div>
+                <div class="hint2-content">
+                    Число ділиться на 5, якщо воно закінчується на 0 або 5.
+                </div>
+            </div>
+            <hr>
+            <!-- end 56 -->
+
+            <!-- 57 -->
+            <h4>57. Яка ознака подільності числа на 10? Назви чис- ла, що діляться на 10.</h4>
+            <div class="hint2-container" onclick="toggleHint2(this)">
+                <div class="hint2-header">
+                    
+                </div>
+                <div class="hint2-content">
+                    Число ділиться на 10, якщо воно закінчується на 0. <br>
+                    10, 20, 30, 40, 50, ... 100, 110, 120 ... 200
+                    <br>10, 20, 30, 40, 50, ... 100, 110, 120 ... 200
+                </div>
+            </div>
+            <hr>
+            <!-- end 57 -->
+            <!-- 58 -->
+            <h4>58. Продовж кожний ряд чисел ще п’ятьма
+                числами.</h4>
+            <div class="question-set" id="set58">
+                <div class="dialog primer">
+                    <div>
+                        <div class="colors">
+                            <p class="p20">16, 18, 20, 22, <input type="text" data-answer="24" class="line_6">, <input
+                                    type="text" data-answer="26" class="line_6">, <input type="text" data-answer="28"
+                                    class="line_6">, <input type="text" data-answer="30" class="line_6">, <input
+                                    type="text" data-answer="32" class="line_6">
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="colors">
+                            <p class="p20">150, 152, 154, <input type="text" data-answer="156" class="line_6">, <input
+                                    type="text" data-answer="158" class="line_6">, <input type="text" data-answer="160"
+                                    class="line_6">, <input type="text" data-answer="162" class="line_6">, <input
+                                    type="text" data-answer="164" class="line_6"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="checkAnswersTrue('set58', 'smile-set58')">Check</button>
+            </div>
+
+            <div id="smile-set58" class="smile"></div>
+            <hr>
+            <!-- end 58 -->
+            <!-- 59 -->
+            <h4>59. Склади вирази за схемами й обчисли їх значення.</h4>
+            <div class="question-set" id="set59">
+                <div class="dialog primer two">
+                    <div>
+                        <div>
+                            <div class="image" style="width: 50%;">
+                                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpvFPlW57qmB7Dfgg?embed=1&width=366&height=306"
+                                    alt="59-1">
+                            </div>
+                            <div class="colors">
+                                <p class="p20"><input type="text" data-answer="25" class="line_6"> : <input type="text"
+                                        data-answer="5" class="line_6"> = <input type="text" data-answer="5"
+                                        class="line_6">
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20"><input type="text" data-answer="60" class="line_6"> : <input type="text"
+                                        data-answer="5" class="line_6"> = <input type="text" data-answer="12"
+                                        class="line_6">
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20"><input type="text" data-answer="500" class="line_6"> : <input type="text"
+                                        data-answer="5" class="line_6"> = <input type="text" data-answer="100"
+                                        class="line_6">
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20"><input type="text" data-answer="5" class="line_6"> : <input type="text"
+                                        data-answer="5" class="line_6"> = <input type="text" data-answer="1"
+                                        class="line_6">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image" style="width: 50%;">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpwupAXu35A1e7vSg?embed=1&width=366&height=306"
+                                alt="59-1">
+                        </div>
+                        <div class="colors">
+                            <p class="p20"><input type="text" data-answer="48" class="line_6"> : <input type="text"
+                                    data-answer="8" class="line_6"> = <input type="text" data-answer="6" class="line_6">
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20"><input type="text" data-answer="48" class="line_6"> : <input type="text"
+                                    data-answer="4" class="line_6"> = <input type="text" data-answer="12"
+                                    class="line_6">
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20"><input type="text" data-answer="48" class="line_6"> : <input type="text"
+                                    data-answer="12" class="line_6"> = <input type="text" data-answer="4"
+                                    class="line_6">
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20"><input type="text" data-answer="48" class="line_6"> : <input type="text"
+                                    data-answer="1" class="line_6"> = <input type="text" data-answer="48"
+                                    class="line_6">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button onclick="checkAnswersTrue('set59', 'smile-set59')">Check</button>
+            </div>
+
+            <div id="smile-set59" class="smile"></div>
+
+            <hr>
+            <!-- end 59 -->
+            <!-- 60 -->
+            <h4>60. Назви значення виразу b : 5, якщо b набуває значень 10, 15, 30, 0, 100, 50</h4>
+
+            <div class="question-set" id="set60">
+                <div class="dialog primer three">
+                    <div>
+                        <div class="colors">
+                            <p class="p20">10 => <input type="text" data-answer="2" class="line_6">
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">15 => <input type="text" data-answer="3" class="line_6"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="colors">
+                            <p class="p20">30 => <input type="text" data-answer="6" class="line_6">
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">0 => <input type="text" data-answer="0" class="line_6"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="colors">
+                            <p class="p20">100 => <input type="text" data-answer="20" class="line_6">
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">50 => <input type="text" data-answer="10" class="line_6"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button onclick="checkAnswersTrue('set60', 'smile-set60')">Check</button>
+            </div>
+
+            <div id="smile-set60" class="smile"></div>
+
+            <hr>
+
+            <!-- end 60 -->
+
+            <!-- 61 -->
+            <h4>61. У виразі <span class="blue">y : 3 </span>значенням <span class="blue">y</span> можуть бути
+                числа <span class="blue">3, 18, 33, 300</span> . <br>
+                Які з чисел не можуть бути значеннями y у виразі <span class="blue">y :
+                    3</span>?</h4>
+            <div id="quiz-form-61">
+                <div class="questions">
+                    <div class="question" data-correct="0,2,5">
+                        <div class="displayFlex italic flexNowrap" style="margin-left: 7%;">
+                            <label>
+                                <input type="checkbox" name="q1" value="0" /> 15
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="1" /> 25
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="2" /> 33
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="3" /> 43
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="4" /> 100
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="5" /> 300
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-61', 'q61-result')">Chek</button>
+                <p id="q61-result" style="width: 20%;"></p>
+            </div>
+
+
+            <div class="hint2-container" onclick="toggleHint2(this)">
+                <div class="hint2-header">
+                    
+                </div>
+                <div class="hint2-content">
+                    <b>Правило ділення на 3:</b>
+                    <p><b>Сума цифр:</b> Якщо сума всіх цифр числа кратна 3, то саме число також кратне 3.</p>
+                </div>
+            </div>
+
+
+            <hr>
+            <!-- end 61 -->
+            <!-- 62 -->
+            <h4>62. Склади вирази й обчисли їх значення.</h4>
+            <div class="question-set" id="set62">
+                <ul class="marginLeft primer dialog">
+                    <li class="colors">Суму чисел 80 і 70 зменшити втричі. <input type="text" data-answer="50"
+                            class="line_6">
+                    </li>
+                    <li class="colors">До числа 89 додати добуток чисел 12 і 6. <input type="text" data-answer="161"
+                            class="line_6"></li>
+                    <li class="colors">Різницю чисел 100 і 82 збільшити вдвічі. <input type="text" data-answer="36"
+                            class="line_6"></li>
+                    <li class="colors">Добуток чисел 20 і 4 зменшити на 50. <input type="text" data-answer="30"
+                            class="line_6"></li>
+                    <li class="colors">До числа 100 додати частку чисел 200 і 10. <input type="text" data-answer="120"
+                            class="line_6"></li>
+                    <li class="colors">Число 5 помножити на суму чисел 35 і 10. <input type="text" data-answer="225"
+                            class="line_6"></li>
+                    <li class="colors">Число 48 поділити на частку чисел 16 і 2. <input type="text" data-answer="6"
+                            class="line_6"></li>
+                </ul>
+            </div>
+
+            <div>
+                <button onclick="checkAnswersTrue('set62', 'smile-set62')">Check</button>
+            </div>
+
+            <div id="smile-set62" class="smile"></div>
+            <div class="hint2-container" onclick="toggleHint2(this)">
+                <div class="hint2-header">
+                    
+                </div>
+                <div class="hint2-content">
+                    <ul class="marginLeft">
+                        <li>(80 + 70): 3 = 50</li>
+                        <li>89 + (12 × 6)= 89 + 72 = 161</li>
+                        <li>(100 − 82) × 2 = 18 × 2 = 36</li>
+                        <li>(20 × 4) − 50 = 80 − 50 = 30</li>
+                        <li>100 + (200:10) = 100 + 20 = 120</li>
+                        <li>5 × (35 + 10) = 5 × 45 = 225</li>
+                        <li>48 : (16 : 2) = 6</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <!-- end 62 -->
+            <!-- 63 -->
+            <h4>63. Розв’яжіть задачу.</h4>
+            <div class="zadacza two">
+                <div>
+                    <div class="image">
+                        <img src="https://i.lefood.menu/wp-content/uploads/w_images/2023/08/recept-80256-620x414.jpg"
+                            alt="zefir">
+                    </div>
+                    <div class="question-set" id="set63">
+                        <div class="dialog italic">
+                            <div class="colors">
+                                <p class="p24 italic "><b> Відповідь:</b> на фабриці залишилось <input type="text"
+                                        data-answer="300" class="line_6"> кг грушевого зефіру.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="p24">На кондитерській фабриці виготовили грушевий зефір і розклали його у 100 коробок, по
+                        7 кг у кожну. У магазини повезли 4 ц зефіру. Яка маса грушевого зефіру залишилася на фабриці?
+                    </p><br>
+                    <ol><b>План розв'язку:</b>
+                        <li>Знайди загальну масу грушевого зефіру.</li>
+                        <li>Знайди масу зефіру, який повезли в магазини.</li>
+                        <li>Визнач, скільки зефіру залишилося на фабриці.</li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <button onclick="checkAnswersTrue('set63', 'smile-set63')">Check</button>
+            </div>
+            <div id="smile-set63" class="smile"></div>
+            <div class="hint2-container" onclick="toggleHint2(this)">
+                <div class="hint2-header">
+                    
+                </div>
+                <div class="hint2-content">
+                    <ul class="marginLeft">Висновок:
+                        <li>Дізналися загальну масу виготовленого зефіру - 700 кг</li>
+                        <li>Перевели центнери в кілограми - 4ц = 400 кг</li>
+                        <li>Обчислили масу зефіру, яка залишилася на фабриці: 700 кг - 400 кг = 300 кг</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+
+
+            <hr>
+            <!-- end 63 -->
+            <!-- 64 -->
+            <h4>64. Практична робота. </h4>
+            <h5>Виготов макет фігури, що має форму конуса, скориставшись малюнком.</h5>
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfpxWUclw81m01RsNA?embed=1&width=1196&height=508" alt="53">
+            </div>
+
+            <!-- end 64 -->
+
+
+
+
+
+
+
+
+
+
+            <div class="footer"></div>
+
+            </main>
+    </div>
+    <script src="../../../scriptMatemat.js"></script>
+</body>
+
+</html>

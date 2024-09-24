@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка знань - 2</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Значення слова</h1>
+            <h2>Перевірка знань</h2>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи, як називаються слова, які мають лише одне значення:</p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> однозначними
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> багатозначними
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> простими
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи багатозначне слово із запропонованих (сніг, місяць, дощ):</p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> дощ
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> місяць
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> сніг
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">3) Укажи, як називають вторинне значення слова, яке виникло на основі прямого:</p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> пряме значення
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> складне значення
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> переносне значення
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">4) Укажи, яке значення є прямим: </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> смачний пиріг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> золота осінь
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> золоті руки
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Укажи, за допомогою чого можна знайти значення фразеологізмів:</p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> словника іншомовних слів
+
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> фразеологічного словника
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> орфографічного словника
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div>
+                <div class="question" data-correct="1">
+                    <p class="vopros">6) Укажи значення фразеологізму «Байдики бити»: </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> лінуватися
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> замовкнути
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> тікати
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker correct';
+                            } else {
+                            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker incorrect';
+                        }
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+</body>
+</html>

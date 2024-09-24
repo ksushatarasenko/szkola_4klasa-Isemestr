@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №070</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 5. Площа фігури</h1>
+            <h2>Урок 70. Одиниці вимірювання площі</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;На минулому уроці ми навчилися обчислювати площу прямокутника. Сьогодні будеш розв’язувати задачі, пов’язані з цим поняттям. Дізнаєшся, які ще є одиниці вимірювання площі. Також обчислюватимеш числове значення буквених виразів, попрацюєш з нерівностями величин і, звичайно, розв’яжеш задачі на рух та інші цікаві вправи.</h3>
+            <div class="p" >
+                <a href="https://elpom.com.ua/training/matematichnij-trenazher-br-dilennya-vid-1-do-10-br/" target="_blank" style="color: rgb(210, 33, 154);">Математичний тренажер. Ділення чисел від 1 до 10</a>
+            </div>
+        <!--  -->
+            
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130882&authkey=!ADTkylzQ7NiN_Cs" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+           
+            
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=p7iwu13s521" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+           
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130881&authkey=!AJD745vhQHv29bg" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи вираз, числове значення якого: <span class="red">684 459</span> <br>
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q1" value="1"> 340 – 240 : 2 + 568 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 76 051 • 9
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 
+                        90 604 • 4
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи число, яке є значенням виразу <span class="red">a • b, якщо а = 4433, b = 7:</span>     <br>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 30 031
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 31 031
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 31 131
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Відстань між двома пристанями 320 км. Половину цієї відстані моторний човен пройшов за 4 год. З якою швидкістю йшов човен? <br>
+                    <label>
+                        <input type="radio" name="q3" value="1"> (320 : 2) : 4 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 320 : 2
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 320 : 4
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130880&authkey=!AAHdM9huXN3Ehzs&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

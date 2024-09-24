@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №054</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 54. Ознайомлення з прямокутним паралелепіпедом</h2>
+            <h3>Сьогодні ми повторимо все, що вивчали у темі «Додавання та віднімання багатоцифрових чисел», а також вивчимо ще одну дуже цікаву геометричну фігуру.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127423&authkey=!ABWO_diTFTr0hf4" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pcf4hafjn21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127422&authkey=!AIIwrZWmWWHrmyc" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи число, що є сумою іменованих чисел: <span class="red italic">12 год 45 хв + 4 год 36 хв</span>
+                    </p>
+                    <div class="vidpovid p">
+                        <button onclick="toggleAnswer(2)" class="answ">відповідь</button>
+                        <div id="answer2" class="answer blue">
+                           <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127421&authkey=%21ANXlJlm566V235w&width=1204&height=1362" alt="img54-1" style="width: 300px; height: 500px;">
+                        </div>
+                    </div>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 16 год 21 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 16 год 9 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 17 год 21 хв
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи довжину прямокутника, якщо його ширина на 756 см менша від довжини і становить 4 м 19 см:
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 11 м 75 см
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 10 м 75 см
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 175 см
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Ширина прямокутного паралелепіпеда 12 см, його довжина вдвічі більша від ширини, а висота – у 4 рази менша за довжину. Знайди висоту прямокутного паралелепіпеда.
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 6 см
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 24 см
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 96 см
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127424&authkey=!ABugofOqb5l7GqQ&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

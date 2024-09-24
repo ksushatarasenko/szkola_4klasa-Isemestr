@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №007</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .answer {
+            display: block;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .correct {
+            border: 2px solid green;
+            background-color: #b8e8c3;
+        }
+        .incorrect {
+            border: 2px solid red;
+            background-color: #e7b6ba;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Повторення та поглиблення матеріалу за 3 клас</h1>
+            <h2>Урок 7. Ділення з остачею. Додавання та віднімання іменованих чисел</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127072&authkey=!AOLU9030xnITH28" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/dd5e83c6bd68432a91b24b11582d0555?themeId=21&templateId=69&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127071&authkey=!ANQ0meDJHJUZSJU" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+             <h2>Контрольні питання</h2>
+            <p class="p">Установите соответствие</p>
+
+    <div class="question zadanie">
+        <span>Знайди значення виразу 59 : 7 = </span>
+        <select class="answer" id="q1">
+            <option value="">Выберите...</option>
+            <option value="9">9 (ост. 4)</option>
+            <option value="7">7 (ост. 10)</option>
+            <option value="8">8 (ост. 3)</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>Знайди значення виразу <br>6 дм – 1 мм</span>
+        <select class="answer" id="q2">
+            <option value="">Выберите...</option>
+            <option value="599">5 дм 99 мм</option>
+            <option value="699">6 дм 99 мм</option>
+            <option value="50">5 дм</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>Знайди значення виразу: <br>9 ц – 2 ц 30 кг =</span>
+        <select class="answer" id="q3">
+            <option value="">Выберите...</option>
+            <option value="630">6 ц 30 кг</option>
+            <option value="770">7 ц 70 кг</option>
+            <option value="670">6 ц 70 кг</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <div class="zadacha">
+            <p>Брат на 4 роки старший за сестру. Він народився у 2004 році. Скільки років сестрі виповниться в 2025 році?</p>
+        </div>
+        <select class="answer" id="q4">
+            <option value="">Выберите...</option>
+            <option value="17">17</option>
+            <option value="25">25</option>
+            <option value="19">19</option>
+        </select>
+    </div>
+    
+    <button class="button" onclick="checkAnswers()">Отправить</button>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "8",
+                q2: "599",
+                q3: "670",
+                q4: "17"
+            };
+
+            let correctCount = 0;
+            for (let [question, answer] of Object.entries(correctAnswers)) {
+                const selectElement = document.getElementById(question);
+                const selectedAnswer = selectElement.value;
+
+                // Remove previous classes
+                selectElement.classList.remove('correct', 'incorrect');
+
+                if (selectedAnswer === answer) {
+                    selectElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    selectElement.classList.add('incorrect');
+                }
+            }
+
+            alert(`Вы правильно ответили на ${correctCount} из 4 вопросов.`);
+        }
+    </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    <!-- <script src="./script_optima.js"></script> -->
+</body>
+
+</html>

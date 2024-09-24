@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №051</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 51. Задачі на знаходження часу руху
+            </h2>
+            <h3>Сьогодні ти повториш дії з багатоцифровими та іменованими числами, познайомишся зі способом визначення часу за відомими швидкістю та відстанню.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127409&authkey=!ANCGZrGvTS6KThw" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h2>Запам’ятай.</h2><br>
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127407&authkey=%21AMabRsqNSZqUSPg&width=1244&height=540">
+                </div>
+                
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=puwo0swnj21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127408&authkey=!AI4dXGEUbtkk_cM" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу: <span class="red italic">300 008 – 291 009</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 8 991
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 9 001
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 8 999
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи вираз, який обчислили правильно: 
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 245 км 375 м – 95 км 468 м = 340 км 843 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 13 м 43 см + 9 м 79 см = 23 м 22 см
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 90 ц 43 кг – 72 ц 58 кг = 49 ц 17 кг
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) Укажи правильне твердження:
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> щоб знайти відстань рухомого об’єкта, потрібно час, за який подолано цю відстань, поділити на швидкість руху об’єкта
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> щоб знайти час руху, потрібно відстань, пройдену за цей час, поділити на швидкість руху
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> щоб знайти швидкість руху, потрібно відстань помножити на час, за який ця відстань пройдена
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Установи відповідність між буквою та величиною, яку вона позначає: <span class="red italic">s</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> час
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> відстань
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> швідкість
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">5) Установи відповідність між буквою та величиною, яку вона позначає: <span class="red italic">v</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> час
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> відстань
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> швідкість
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">6) Установи відповідність між буквою та величиною, яку вона позначає: <span class="red italic">t</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> час
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> відстань
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> швідкість
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">7) Відстань від села до міста 100 км. Мотоцикліст їхав 3 год зі швидкістю 25 км/год. Яку відстань йому залишилося проїхати?
+                    </p>
+                    <label>
+                        <input type="radio" name="q7" value="1"> 100 : 3 – 25
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q7" value="2"> 100 – 25 · 3
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q7" value="3"> 100 + 25 · 3
+                    </label><br>
+                    <p class="marker" id="q7-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127410&authkey=!AFBxc_LhMGbK_Qw&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

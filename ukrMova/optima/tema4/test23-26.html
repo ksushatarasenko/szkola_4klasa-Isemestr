@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 26 (за уроками 23-26)</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 4. Іменник</h1>
+            <h2>Тест № 26(за уроками 23–26) </h2>
+            <!-- zadanie -->
+            <h2>Контрольні питання not</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи, як потрібно написати слово <span class="weight">(без)хмарний</span></p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> через дефіс
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> разом
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> окремо
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи правильне написання слова</p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> приїхати
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> преїхати
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> пріїхати
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Укажи корінь слова приказка</p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> -каз-
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> приказ-
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> -казка-
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">4) Укажи слово, в якому допущено помилку:</p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> преїхати
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> прибережний
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> преславний
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Укажи слово з прийменником:</p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> (по)страждати
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> (по)морю
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> (по)годився
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div>
+                <div class="question" data-correct="2">
+                    <p class="vopros">6) Укажи правильне написання слова</p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> пригарний
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> прегарний
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> прігарний
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+           <script src="../../../scriptUkrMova.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+</body>
+</html>

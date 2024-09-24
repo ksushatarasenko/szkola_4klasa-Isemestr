@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №053</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 53. Прості задачі, задані у прямій і непрямій формах</h2>
+            <h3>Сьогодні ми продовжимо вивчати задачі на знаходження відстані, швидкості та часу руху різних об’єктів. А також навчимося розв’язувати задачі, де невідоме задано явно та неявно.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127418&authkey=!ABPDoVATChWmI0A" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pobsoyrwj24" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127417&authkey=!ADpa6_U1BdHI0Po" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи розв’язок задачі при <span class="red italic">а = 4, b = 5:</span>
+                    </p>
+                    <p class="vopros">Фермер має 4 вівці масою <span class="red">а кг</span> кожна та 5 овець масою
+                        <span class="red">b кг</span> кожна. Знайди масу усіх овець.</p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 25 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 41 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 40 кг
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Установи відповідність між виразами та їхнім значенням: <span
+                            class="red italic">36 · 10 : 9 – 330 : 10</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 7
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 9
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) Установи відповідність між виразами та їхнім значенням: <span
+                            class="red italic">600 : 30 – 150 · 8 : 100</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 7
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 9
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">4) Установи відповідність між виразами та їхнім значенням: <span
+                            class="red italic">36 · 10 : 9 – 330 : 10</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 7
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> 8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> 9
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">5) Укажи число, яке є розв’язком рівняння: <span class="red italic">х + (75 064 + 37 605) = 156 009</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> 268 678
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> 112 669
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> 43 340
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">6) Відстань 900 км сокіл пролітає за 3 год, що втричі довше, ніж літак. З якою швидкістю пролетить цю відстань літак?
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q6" value="1"> 900 км/год
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 100 км/год
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 300 км/год
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div>
+                <hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127419&authkey=!APMc1rogGqe4UB8&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

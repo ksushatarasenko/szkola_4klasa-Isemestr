@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №11</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Значення слова</h1>
+            <h2>Урок 11. Дослідження походження слів</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127093&authkey=!AHdF9euO2wD8cK4" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/908e3011a5084ef48c1b44eaf5ef3145?themeId=1&templateId=38&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127092&authkey=!APVDeIuLr66mlto" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи слово – відгадку до ребуса </p>
+                    <img src="./image/rebusLekcja11.png" alt="rebus11" style="width: 300px; height: 150px;"> <br>
+                    <label>
+                        <input type="radio" name="q1" value="1"> осінь
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2">  основа
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> осипаний
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="6">
+                    <p class="vopros">2) Укажи назву словника, в якому можна дослідити походження слів</p>
+                    <label>
+                        <input type="radio" name="q2" value="4"> словник синонімів
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="5"> орфографічний словник
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="6"> етимологічний словник
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="36">
+                    <p class="vopros">3) Укажи нове слово, переставивши місцями склади у слові <span class="weight">СОСНА</span></p>
+                    <label>
+                        <input type="radio" name="q3" value="36"> насос
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="32"> сон
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="33"> на
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">4) Укажи слово – відгадку <br>
+                        <span class="red">
+                            Б’ють мене старі й малі <br>
+                            І в повітрі, й на землі, <br>
+                            Та від цього не вмираю, <br>
+                            Тільки весело стрибаю.</span>
+                        </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> м’яч
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> килим
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> сходи
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker correct';
+                            } else {
+                            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker incorrect';
+                        }
+
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+</body>
+</html>

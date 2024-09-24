@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №1</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .answer {
+            display: block;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .correct {
+            border: 2px solid green;
+            background-color: #b8e8c3;
+        }
+        .incorrect {
+            border: 2px solid red;
+            background-color: #e7b6ba;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Звуки і букви. Склад. Наголос. Звуко-буквений аналіз слів</h1>
+            <h2>Урок 1. Правильне наголошення загальновживаних слів</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127077&authkey=!ADfo31lf5DIi3pw" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/8f672f8ad76e479c81d3d52ea092ca91?themeId=2&templateId=10&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127076&authkey=!AHCxrulLC5f2vbw" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+    <div class="question zadanie">
+        <span>1) Укажи слово, яке має декілька значень </span>
+        <select class="answer" id="q1">
+            <option value="">Выберите...</option>
+            <option value="1"> дуб</option>
+            <option value="2">ноутбук</option>
+            <option value="3">сонечко</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <p class="p">2) Укажи кількість звуків у слові </p>
+        <span class="red">Україна </span>
+        <select class="answer" id="q2">
+            <option value="">Выберите...</option>
+            <option value="4">7 звуків  </option>
+            <option value="5">9 звуків</option>
+            <option value="6">8 звуків </option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>3) Укажи, що потрібно робити для того, щоб збагачувати свій словниковий запас</span>
+        <select class="answer" id="q3">
+            <option value="">Выберите...</option>
+            <option value="7">багато писати </option>
+            <option value="8">багато читати</option>
+            <option value="9">багато говорити </option>
+        </select>
+    </div>
+    <button class="button" onclick="checkAnswers()">Отправить</button>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "3",
+                q2: "6",
+                q3: "8"
+            };
+
+            let correctCount = 0;
+            for (let [question, answer] of Object.entries(correctAnswers)) {
+                const selectElement = document.getElementById(question);
+                const selectedAnswer = selectElement.value;
+
+                // Remove previous classes
+                selectElement.classList.remove('correct', 'incorrect');
+
+                if (selectedAnswer === answer) {
+                    selectElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    selectElement.classList.add('incorrect');
+                }
+            }
+
+            alert(`Вы правильно ответили на ${correctCount} из 3 вопросов.`);
+        }
+    </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+        </main>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

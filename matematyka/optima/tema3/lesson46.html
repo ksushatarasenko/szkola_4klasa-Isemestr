@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №046</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 46. Додавання та віднімання способом округлення</h2>
+            <h3>Сьогодні ми повторимо деякі основні поняття розділу «Багатоцифрові числа» та вдосконалимо вміння виконувати додавання та віднімання чисел методом округлення.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127385&authkey=!AI8JC5tWI-SKayg" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=peaxt743k21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127384&authkey=!AAyyWCEp0SuqA_k" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи число, яке є різницею чисел; виконай віднімання методом округлення: <span class="red italic">8453 – 699</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 7 764
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 7 754
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 7 854
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи число, що є сумою чисел; виконай додавання методом округлення: <span class="red italic">457 265 + 1997</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1">  455 268
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2">  459 262
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3">  459 265
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">3) Установи відповідність між виразами та їхнім значенням: <span class="red italic">45 765 + 2998</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1">  641 257
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  28 722
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  48 763
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">4) Установи відповідність між виразами та їхнім значенням: <span class="red italic">643 256 – 1999</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1">  641 257
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  28 722
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  48 763
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Установи відповідність між виразами та їхнім значенням: <span class="red italic">24 725 + 3997</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  641 257
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  28 722
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  48 763
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">6) Маса слона Бімбо 3 т 427 кг, а маса слонихи Нері на 328 кг менша. Яка маса Бімбо та Нері разом?
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 7 т 510  кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 6 т 526 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 7 т 182 кг
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127386&authkey=!AEyyb9a6oBCQCHI&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

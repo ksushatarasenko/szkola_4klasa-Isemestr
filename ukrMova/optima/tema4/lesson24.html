@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №24</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 4. Іменник</h1>
+            <h2>Урок 24. Конкретні та абстрактні іменники</h2>
+            <h3>Сьогодні на уроці ти продовжиш пригадувати все, що знаєш про іменник, визначатимеш різні значення іменника та виконуватимеш цікаві завдання.</h3>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127244&authkey=!APzp2mj0LgHQ2AI" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=psy3nrxnv21" frameborder="0"></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127245&authkey=!AKzdwBPlTDhQoYA" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1)Укажи продовження рядка:  <span class="italic blue">Слова, які можна побачити зором, сфотографувати, називають …</span></p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> конкретними іменниками
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> видимими іменниками
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> абстрактними іменниками
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">2) Укажи рядок, у якому всі слова – <span class="blue">абстрактні іменники</span></p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> біль, ноутбук, килим
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> береза, журба, море
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> веселощі, настрій, розум
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Укажи конкретний іменник</p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> крісло
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> повітря
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> хвилювання
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">4) Укажи, на яке питання відповідають іменники з абстрактним значенням</p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> що?
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> який?
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> хто?
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127246&authkey=!AG7pqC86H5SLUA4&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="./image/dozustrichi.png" alt="">
+            </div>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker correct';
+                        } else {
+                            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker incorrect';
+                        }
+
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+</body>
+
+</html>

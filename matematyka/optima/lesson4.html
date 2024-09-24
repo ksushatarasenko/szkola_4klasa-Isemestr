@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №004</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .answer {
+            display: block;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .correct {
+            border: 2px solid green;
+            background-color: #b8e8c3;
+        }
+        .incorrect {
+            border: 2px solid red;
+            background-color: #e7b6ba;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Повторення та поглиблення матеріалу за 3 клас</h1>
+            <h2>Урок 4. Письмове додавання та віднімання трицифрових чисел</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127065&authkey=!AMAzR5cPfVwihRM" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/2306fe4b96de4f9086951d1fb331cd0d?themeId=22&templateId=5&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127066&authkey=!AOHL4v0Tio4Pkuw" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+             <h2>Контрольні питання</h2>
+            <p class="p">Установите соответствие</p>
+
+    <div class="question zadanie">
+        <span>1000 – 963 = </span>
+        <select class="answer" id="q1">
+            <option value="">Выберите...</option>
+            <option value="37">37</option>
+            <option value="900">900</option>
+            <option value="457">457</option>
+            <option value="189">189</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>742 + 158 = </span>
+        <select class="answer" id="q2">
+            <option value="">Выберите...</option>
+            <option value="37">37</option>
+            <option value="900">900</option>
+            <option value="457">457</option>
+            <option value="189">189</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>411 – 222 = </span>
+        <select class="answer" id="q3">
+            <option value="">Выберите...</option>
+            <option value="37">37</option>
+            <option value="900">900</option>
+            <option value="457">457</option>
+            <option value="189">189</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>706 – 249 = </span>
+        <select class="answer" id="q4">
+            <option value="">Выберите...</option>
+            <option value="37">37</option>
+            <option value="900">900</option>
+            <option value="457">457</option>
+            <option value="189">189</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <span>7дм 2см : 9 = </span>
+        <select class="answer" id="q5">
+            <option value="">Выберите...</option>
+            <option value="8">8 дм</option>
+            <option value="6">6 см</option>
+            <option value="8cm">8 см</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <span>1000 - х = 341</span>
+        <select class="answer" id="q6">
+            <option value="">Выберите...</option>
+            <option value="658">658</option>
+            <option value="659">659</option>
+            <option value="548">548</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <div class="zadacha">
+            <p class="p">
+                Готуючись до автоподорожі, мандрівник придбав сонцезахисні окуляри за 378 грн, долив у бак бензину на 486 грн і купив продуктів на 136 грн. Яку суму витратив мандрівник?
+            </p>
+            <img src="" alt="">
+        </div>
+        <select class="answer" id="q7">
+            <option value="">Выберите...</option>
+            <option value="950">950 грн</option>
+            <option value="790">790 грн</option>
+            <option value="1000">1000 грн</option>
+        </select>
+    </div>
+
+    <button class="button" onclick="checkAnswers()">Отправить</button>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "37",
+                q2: "900",
+                q3: "189",
+                q4: "457",
+                q5: "8cm",
+                q6: "659",
+                q7: "1000"
+            };
+
+            let correctCount = 0;
+            for (let [question, answer] of Object.entries(correctAnswers)) {
+                const selectElement = document.getElementById(question);
+                const selectedAnswer = selectElement.value;
+
+                // Remove previous classes
+                selectElement.classList.remove('correct', 'incorrect');
+
+                if (selectedAnswer === answer) {
+                    selectElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    selectElement.classList.add('incorrect');
+                }
+            }
+
+            alert(`Вы правильно ответили на ${correctCount} из 7 вопросов.`);
+        }
+    </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    <!-- <script src="./script_optima.js"></script> -->
+</body>
+
+</html>

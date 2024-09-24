@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №043</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 43. Окремі випадки додавання та віднімання. Перевірка додавання</h2>
+            <h3>Ти вже можеш додавати та віднімати багатоцифрові числа. Сьогодні ми продовжимо вивчати ці арифметичні дії, а також вивчимо ще деякі цікаві випадки, пов’язані з ними.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127367&authkey=!AMDgqQlYPC-PbCM" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pbj15s2da21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127366&authkey=!AHM1iWIHbwobXNU" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи число, яке є сумою чисел: <span class="red italic">17 821 і 12 079</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 29 890
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 29 900
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 5 742
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи число, яке є розв'язком рівняння: <span class="red italic">х – 1999 = 22</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1">  1 977
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2">  2 021
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3">  2001
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">3) Установи відповідність між виразами та їхнім значенням: <span class="red italic">999 999 + 1</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1">  10 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  100 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  1 000 000
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Установи відповідність між виразами та їхнім значенням: <span class="red italic">99 999 + 1</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1">  10 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  100 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  1 000 000
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">5) Установи відповідність між виразами та їхнім значенням: <span class="red italic">9 999 + 1</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  10 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  100 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  1 000 000
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">6) Скільки трицифрових чисел можна записати тільки за допомогою цифр 1 і 2?
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 6
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 2
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 4
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127368&authkey=!AHBWp8sAu49MMVU&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

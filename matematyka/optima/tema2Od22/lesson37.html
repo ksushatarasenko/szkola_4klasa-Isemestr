@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №037</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Багатоцифрові числа</h1>
+            <h2>Урок 37. Століття</h2>
+            <h3>Сьогодні ми продовжуємо вивчати одиниці вимірювання часу, будемо порівнювати та виконувати арифметичні дії з такими одиницями, розв’язувати задачі та вивчимо нову одиницю вимірювання часу!</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127343&authkey=!ACQVk5G2F-xWpGc" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pr7d6efac21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127342&authkey=!ABueE8vDpvy9TrI" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1)Укажи, скільки років становить 16 століть:
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1">  16 000 років                        
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2">  1 600 років
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 160 років
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи, скільки повних століть від початку літочислення пройшло до першого польоту людини у космос? Ця подія відбулася 1961 року.
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1">  20 століть
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2">  19 століть
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3">  18 століть
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Укажи, у якому столітті Т. Едісон продемонстрував перше у світі німе кіно? Ця подія відбулася у США у 1894 році.
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 19 століття
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  18 століття
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  17 століття
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Батькові 40 років, він у 8 разів старший за свого сина. Скільки років бабусі, якщо вона у 12 разів старша за онука?
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 68 років
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  60 років
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  52 роки
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127344&authkey=!ACCAc9Zhhjgw35s&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

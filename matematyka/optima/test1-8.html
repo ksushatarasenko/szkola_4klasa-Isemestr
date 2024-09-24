@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1-8</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .answer {
+            display: block;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .correct {
+            border: 2px solid green;
+            background-color: #b8e8c3;
+        }
+        .incorrect {
+            border: 2px solid red;
+            background-color: #e7b6ba;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Повторення та поглиблення матеріалу за 3 клас</h1>
+            <h2>Тест 8 (за уроками 1–8)</h2>
+            <!-- zadanie -->
+             <h2>Контрольні питання</h2>
+            <p class="p">Установите соответствие</p>
+
+    <div class="question zadanie">
+        <span>Обчисли значення виразу: <br> 96 – b : 4, якщо b = 32 </span>
+        <select class="answer" id="q1">
+            <option value="">Выберите...</option>
+            <option value="78">78</option>
+            <option value="87">87</option>
+            <option value="88">88</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <div class="zadacha">
+            <p>У магазин завезли 450 м’ячів: 120 волейбольних, 230 баскетбольних, а решту – футбольних. Скільки футбольних м’ячів завезли в магазин?</p>
+        </div>
+        <select class="answer" id="q2">
+            <option value="">Выберите...</option>
+            <option value="200">200 м’ячів</option>
+            <option value="150">150 м’ячів</option>
+            <option value="100">100 м’ячів</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>Укажи різницю часток чисел 21 і 3 та 10 і 2</span>
+        <select class="answer" id="q3">
+            <option value="">Выберите...</option>
+            <option value="2">2</option>
+            <option value="27">27</option>
+            <option value="0">0</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <div class="zadacha">
+            <p>Укажи число, яке складається з двох сотень і п’яти десятків</p>
+        </div>
+        <select class="answer" id="q4">
+            <option value="">Выберите...</option>
+            <option value="100">205</option>
+            <option value="25">25</option>
+            <option value="250">250</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <span>56 – х = 16</span>
+        <select class="answer" id="q5">
+            <option value="">Выберите...</option>
+            <option value="8">x = 8</option>
+            <option value="40">x = 40</option>
+            <option value="56">x = 56</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <span>40 : х = 5</span>
+        <select class="answer" id="q6">
+            <option value="">Выберите...</option>
+            <option value="8">x = 8</option>
+            <option value="40">x = 40</option>
+            <option value="56">x = 56</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <span>х + 16 = 72</span>
+        <select class="answer" id="q7">
+            <option value="">Выберите...</option>
+            <option value="8">x = 8</option>
+            <option value="40">x = 40</option>
+            <option value="56">x = 56</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <div class="zadacha">
+            <p>Одна коробка з яблуками важить 30 кг. Коробка з мандаринами важить на <sup>1</sup>&frasl;<sub>5</sub> частину менше, ніж коробка з яблуками. Скільки важать 4 коробки з мандаринами?</p>
+            <div class="image">
+                <img src="./video/30 кг.png" alt="">
+            </div>
+            <select class="answer" id="q8">
+                <option value="">Выберите...</option>
+                <option value="96">96 кг</option>
+                <option value="600">600 кг</option>
+                <option value="10">10 кг</option>
+            </select>
+        </div>
+    </div>
+    
+    <button class="button" onclick="checkAnswers()">Отправить</button>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "88",
+                q2: "100",
+                q3: "2",
+                q4: "250",
+                q5: "40",
+                q6: "8",
+                q7: "56",
+                q8: "96"
+            };
+
+            let correctCount = 0;
+            for (let [question, answer] of Object.entries(correctAnswers)) {
+                const selectElement = document.getElementById(question);
+                const selectedAnswer = selectElement.value;
+
+                // Remove previous classes
+                selectElement.classList.remove('correct', 'incorrect');
+
+                if (selectedAnswer === answer) {
+                    selectElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    selectElement.classList.add('incorrect');
+                }
+            }
+
+            alert(`Вы правильно ответили на ${correctCount} из 8 вопросов.`);
+        }
+    </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    <!-- <script src="./script_optima.js"></script> -->
+</body>
+
+</html>

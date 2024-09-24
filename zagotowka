@@ -1,0 +1,165 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML" class="p28 weight"><mfrac><mn>1</mn><mn>4</mn></mfrac></math>     => 1/4
+
+
+
+
+
+//-----------------
+<div class="question-set" id="set60">
+    <div class="dialog primer">
+        <div class="colors">
+            <p class="p20">10 => <input type="text" data-answer="2" class="line_6"></p>
+        </div>
+        <div class="colors">
+            <p class="p20">15 => <input type="text" data-answer="3" class="line_6"></p>
+        </div>    
+    </div>
+</div>
+
+<div>
+    <button onclick="checkAnswersTrue('set60', 'smile-set60')">Check</button>
+</div>
+
+<div id="smile-set60" class="smile"></div>
+
+
+
+;----------- выбор несколько ответов
+
+ <div id="quiz-form-61">
+                <div class="questions">
+                    <div class="question" data-correct="0,2,5">
+                        <div class="displayFlex italic flexNowrap" style="margin-left: 7%;">
+                            <label>
+                                <input type="checkbox" name="q1" value="0" /> 15
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="1" /> 25
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="2" /> 33
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-61', 'q61-result')">Chek</button>
+                <p id="q61-result" style="width: 20%;"></p>
+            </div>
+
+; ------------ end -- выбор несколько ответов
+
+
+<!-- vidpovid do zadaczy  -->
+<div class="question-set" id="set76">
+    <div class="dialog primer zadacza">
+        <div class="colors italic">
+            <p class="p20"><b> Відповідь:</b> господиня законсервувула <input type="text"
+                data-answer="20" class="line_6">л томатного соку.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <button onclick="checkAnswersTrue('set76')">Check</button>
+</div>
+
+<div class="hint2-container" onclick="toggleHint2(this)">
+    <div class="hint2-header"></div>
+    <div class="hint2-content">
+        <div class="image">
+            <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfp5S0RPrGKG_2ZsVQ?embed=1&width=1394&height=326" alt="otwet72">
+        </div>
+    </div>
+</div>
+<!-- end vipdpovid do zadaczy -->
+
+
+<!-- --> 
+<div class="question-set" id="set2">
+    <div class="dialog italic ">
+        <div class="colors">
+            <p class="p20 italic ">- zielona, ale też niebieska jak woda i żółta jak słonce. => <span
+                    class="blue">lato</span></p>
+        </div>
+        <div class="colors">
+            <p class="p20">- bardzo zielona, ale też różowa, żółta, biała jak kwiaty. => <input type="text"
+                    data-answer="lubię" class="line_1"></p>
+        </div>
+    </div>
+</div>
+ <div class="flexbutton">
+    <button onclick="checkAnswersTrue('set6')">Check</button>
+    <div>
+        <button onclick="toggleHints('hints6')">answer</button>
+        <div id="hints6" style="display: none;">
+            <p>1. Mama jest szczupła i niska.</p>
+            <p>2. Tata ma brązowe oczy.</p>
+            <p>267 + 379 = 270 + 380 - 3 - 1 = 650 - 4 = 646</p>
+        </div>
+    </div>
+</div>
+-------- 
+<div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkZhll32s5cOmgkmA?embed=1&width=988&height=1040" class="play-sound" data-audio="audio1"  style="cursor: pointer;">
+            </div>
+            <audio id="audio1">
+                <source src="./audio/SJ4-M1/storiTimes/media1.mp3" type="audio/mpeg">
+            </audio>
+
+
+// RADIO
+
+<div>
+    <div id="task6">
+        <div class="task">
+            <div class="options">
+                <p class="p20">Mathis ogląda fajny program.</p>
+                <div class="boxRadio">
+                    <label><input type="radio" name="question1" value="1"> P</label>
+                    <label><input type="radio" name="question1" value="2"> N</label>
+                </div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="options">
+                <p class="p20">Mathis kupuje na Allegro nowy album.</p>
+                <div class="boxRadio">
+                    <label><input type="radio" name="question1" value="1"> P</label>
+                    <label><input type="radio" name="question1" value="2"> N</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="checkRadio('task6')">Chek</button>
+</div>
+
+/// wybor otweta
+<div id="quiz-form">
+                <div class="questions">
+                    <div class="question" data-correct="0,2,3,4,6,9">
+                        <div class="displayFlex italic flexNowrap" style="margin-left: -7%;">
+                            <label>
+                                <input type="checkbox" name="q1" value="0" /> 390
+                            </label>
+                            <label>
+                                <input type="checkbox" name="q1" value="1" /> 45
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="checkAnswers" onclick="checkAnswersLabel()">Chek</button>
+                <p id="q1-result" style="width: 20%;"></p>
+            </div>
+
+
+///podskazkaOptima
+
+<div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header">
+                        
+                    </div>
+                    <div class="hint2-content">
+                        Число ділиться на 5, якщо воно закінчується на 0 або 5.
+                    </div>
+                </div>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №014</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+        .vopros.zadacha {
+            white-space: nowrap; /* Предотвращает разрывы строк */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Багатоцифрові числа</h1>
+            <h2>Урок 14. Розклад чисел 2-го класу на суму розрядних доданків</h2>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127176&authkey=!AP9NpVQo1KmiPzo" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="prezent">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/c787b210802146ef971d42f1c948a67b?themeId=41&templateId=35&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127177&authkey=!AP0xZGqc2tgfFY0" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи, скільки доданків містить сума розрядних доданків числа:</p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> не більше, ніж 2 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> шість і не менше 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> стільки, скільки у числі є цифр, відмінних від нуля
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="4">
+                    <p class="vopros">2) Укажи, де правильно подано число 705 000 у вигляді суми розрядних доданків: </p>
+                    <label>
+                        <input type="radio" name="q2" value="4"> 700 000 + 5 000 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="5"> 500 000 + 7 000 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="6"> 700 000 + 50 000
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="36">
+                    <p class="vopros">3) Укажи число за сумою його розрядних доданків: <span class="red italic">500 000 + 20 000 + 5 000</span></p>
+                    <label>
+                        <input type="radio" name="q3" value="36"> 525 000 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="32"> 502 500 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="33"> 552 000 
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div><hr>
+                <div class="question" data-correct="32">
+                    <p class="vopros">4) Укажи правильну відповідь до виразу:  <span class="red italic"> 715 000 + 10 000</span></p>
+                    <label>
+                        <input type="radio" name="q4" value="36"> 716 000 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="32"> 725 000 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="33"> 705 000
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="36">
+                    <p class="vopros">5) Укажи правильну відповідь до виразу: <span class="red italic">565 000 – 50 000 </span></p>
+                    <label>
+                        <input type="radio" name="q5" value="36"> 515 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="32"> 65 000  
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="33"> 560 000 
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker correct';
+                            } else {
+                            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker incorrect';
+                        }
+
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №025</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Багатоцифрові числа</h1>
+            <h2>Урок 25. Порівняння чисел. Додавання та віднімання на основі нумерації</h2>
+            <h3>Сьогодні ми продовжимо вивчати арифметичні дії додавання та віднімання багатоцифрових чисел. А також ми зможемо розкрити інші математичні секрети, які пов’язані з такими числами.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127294&authkey=!AOMZDODBfzc83Mg" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=poq5zqi5321" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127293&authkey=!AN8KQgLbd3PlSMo" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи знак, який слід поставити між числами: <span class="red italic">856 002  ...  805 602</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> >
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> <
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> =
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи знак, який слід поставити між числами: <span class="red italic">78 001 ... 780 100</span></p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> <
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> >
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> =
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="6">
+                    <p class="vopros">3) Укажи число, яке є сумою чисел  904 100 та 50 000:
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="4"> 909 100
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="5"> 904 600
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="6"> 954 100
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">4) Укажи число, що є різницею чисел: <span class="red italic">785 200 – 5 000</span></p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 785 700
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> 735 200
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> 780 200
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Із 22 кг бавовняного насіння одержали 4 кг олії. Скільки потрібно насіння, щоб отримати 36 кг олії?</p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> 56 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> 198 кг
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> 189 кг
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127295&authkey=!AD4LPq0ON_5o1RE&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

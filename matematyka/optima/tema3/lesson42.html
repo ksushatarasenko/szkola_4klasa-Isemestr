@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №042</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 42. Письмове віднімання багатоцифрових чисел, коли у зменшуваному є нулі</h2>
+            <h3>На минулому уроці ми пригадали, як виконувати письмово дію віднімання у випадку багатоцифрових чисел. Сьогодні ми закріпимо наші знання та розглянемо особливий випадок, коли зменшуване містить декілька нулів.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127362&authkey=!AO6nRqgafMWSv3M" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=ppqvcyn2v22" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127362&authkey=!AO6nRqgafMWSv3M" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи число, яке є різницею чисел: <span class="red italic">62 005 і 5 489</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 56 516
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 56 526
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 57 116
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">2) Укажи число, яке  є значенням виразу: <span class="red italic">500 681 – ( 39 225 +54 678)</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1">  516 134
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2">  461 456
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3">  406 778
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Установи відповідність між рівняннями та їхніми розв’язками: <span class="red italic">6508 + х = 700796</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1">  694 288
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  43 999
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  600 078
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Установи відповідність між рівняннями та їхніми розв’язками: <span class="red italic">х + 112007 = 156006</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1">  694 288
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  43 999
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  600 078
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">5) Установи відповідність між рівняннями та їхніми розв’язками: <span class="red italic">21229 + х = 621307</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  694 288
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  43 999
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  600 078
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">6) Найменша відстань від Землі до Місяця становить 356 410 км. Космічний корабель подолав десяту частину цієї відстані. Скільки кілометрів йому залишилося подолати?
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 35 641 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 320 769 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 392 051 км
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127364&authkey=!AHnXNo2ndQ0Sakc&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

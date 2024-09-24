@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №020</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .marker {
+            font-weight: bold;
+        }
+        .vopros.zadacha {
+            white-space: nowrap; /* Предотвращает разрывы строк */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 2. Багатоцифрові числа</h1>
+            <h2>Урок 20. Додавання та віднімання 1. «Сусіди» багатоцифрового числа</h2>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127194&authkey=!AC_jBWGYLyj__aU" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/a74b39819398433e828d9c36cdafe399?themeId=55&templateId=25&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127193&authkey=!AAey6eBiB9va1jY" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1)Укажи «сусідів» числа 50 230</p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 50 231 і 50 231
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 50 228 і 50 229
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 50 229 і 50 231
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи значення виразу: <span class="red italic">16 499 + 1</span></p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 16 500
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 16 400
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 16 490
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="5">
+                    <p class="vopros">3)Укажи значення виразу: <span class="red italic">560 700 - 1</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="4"> 559 700
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="5"> 560 699
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="6"> 560 600
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">4) Установи відповідність між рівнянням та його значенням: <span class="red italic"> х · 3 = 30 000 </span></p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 10 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> 2
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> 20 000
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">5)Установи відповідність між рівнянням та його значенням: <span class="red italic"> х : 5 = 4 000 </span></p>
+                    <label>
+                        <input type="radio" name="q5" value="1"> 10 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2"> 2
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3"> 20 000
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">6) Установи відповідність між рівнянням та його значенням: <span class="red italic"> 600 000 : х = 300 000</span></p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 10 000
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 2
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 20 000
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                    
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <script>
+                function checkAnswers() {
+                    const form = document.getElementById('quiz-form');
+                    const questions = form.getElementsByClassName('question');
+                    let score = 0;
+                    let total = questions.length;
+
+                    for (let i = 0; i < questions.length; i++) {
+                        const question = questions[i];
+                        const correctAnswer = question.getAttribute('data-correct');
+                        const selectedAnswer = form[`q${i + 1}`].value;
+                        const resultElement = document.getElementById(`q${i + 1}-result`);
+
+                        if (selectedAnswer === correctAnswer) {
+                            score++;
+                            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker correct';
+                            } else {
+                            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+                            resultElement.className = 'marker incorrect';
+                        }
+
+                    }
+
+                    const result = document.getElementById('result');
+                    result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
+                    if (score === total) {
+                        result.className = 'correct';
+                    } else {
+                        result.className = 'incorrect';
+                    }
+                }
+            </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

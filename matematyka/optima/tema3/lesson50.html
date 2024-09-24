@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №050</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 50. Задачі на знаходження відстані. Розв’язування задач двома способами</h2>
+            <h3>Сьогодні ми будемо обчислювати вирази, навчимося знаходити відстань за відомими швидкістю та часом і розв’язуватимемо цікаві задачі.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127402&authkey=!AGUr-PoEgkd3AJE" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h2>Запам’ятай.</h2><br>
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127403&authkey=%21ALbUuBb5QK7LYAc&width=1290&height=282">
+                </div>
+                
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=ptxd5d3ac21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127400&authkey=!ADoFXo29ZBa644k" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу; виконай віднімання у стовпчик: <span class="red italic">392 334 – (220 625 + 168 529)</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 340 238
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 3 180
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 444 430
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Установи, за даними таблиці, відповідність між об’єктами та відстанню, яку вони подолають: <br> <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127401&authkey=%21ACyZkXurHz8zb_o&width=886&height=180" alt="img50-1" style="width: 500px;height: 130px;"> <span class="red italic">вертоліт</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 840 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 129 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 168 км
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">3) Установи, за даними таблиці, відповідність між об’єктами та відстанню, яку вони подолають: <br> <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127401&authkey=%21ACyZkXurHz8zb_o&width=886&height=180" alt="img50-1" style="width: 500px;height: 130px;"> <span class="red italic">яхта</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 840 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 129 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 168 км
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Установи, за даними таблиці, відповідність між об’єктами та відстанню, яку вони подолають: <br> <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127401&authkey=%21ACyZkXurHz8zb_o&width=886&height=180" alt="img50-1" style="width: 500px;height: 130px;"> <span class="red italic">мопед</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 840 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> 129 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> 168 км
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">5) Укажи відстань, яку пролетить ракета зі швидкістю 8 км/с за 10с:
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  80 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  80 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  8 км
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">6) Відстань у 232 км мотоцикліст проїхав за 4 години. Яку відстань він проїде за 2 години, якщо зменшить швидкість на 18 км/год?
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 152 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 80 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 320 км
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127404&authkey=!ACWp80Lgef4MXKg&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №044</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 44. Перевірка віднімання</h2>
+            <h3>Минулого разу ми навчились письмово обчислювати багатоцифрові числа та пригадали, що дію додавання завжди перевіряємо дією віднімання. А як щодо дії віднімання? Звісно, дію віднімання перевіряємо додаванням. Ти переконаєшся у цьому сьогодні на уроці! А ще виконаєш багато інших цікавих завдань.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127370&authkey=!AGhb1FNInt-ec8E" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=p3eotoomn21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127369&authkey=!AIIyKvyqmvP6ysQ" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи число, що є значенням виразу; виконай віднімання у стовпчик: <span class="red italic">708 059 – 699 869</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 8 090
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 8 190
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 10 190
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">2) Ведмежа може з’їсти 600 г меду за 6 хв, а дорослий ведмідь — за 3 хв. За скільки часу вони з’їдять  цей мед, якщо їстимуть його разом?
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1">  1 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2">  3 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3">  2 хв
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                    <div class="question p">
+                        <button onclick="toggleAnswer(2)" class="answ">відповідь</button>
+                        <div id="answer2" class="answer blue">
+                            <p>Щоб знайти час, за який ведмежа і дорослий ведмідь разом з'їдять 600 г меду, ми можемо скористатися поняттям продуктивності.</p>
+                            <ul><li>Продуктивність ведмежати: воно з'їдає 600 г меду за 6 хвилин, тобто 100 г меду за 1 хвилину.</li>
+                            <li>Продуктивність дорослого ведмедя: він з'їдає 600 г меду за 3 хвилини, тобто 200 г меду за 1 хвилину.</li></ul>
+                            <p>Якщо вони їдять разом, то їх спільна продуктивність становить:</p>
+                            <p class="centr">100 г/хв+200 г/хв=300 г/хв</p>
+                            <p>Загальна кількість меду — 600 г. Тепер знайдемо час, за який вони разом з'їдять ці 600 г:</p>
+                            <p class="centr">Час= <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn> 600 г</mn><mn>300 г/хв</mn></mfrac></math> 
+                                =2 хв</p>
+                            <p>Отже, разом ведмежа і дорослий ведмідь з'їдять 600 г меду за 2 хвилини.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Установи відповідність між виразами та їхнім значенням: <span class="red italic">(150 000:1000):(75:5)</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1">  10 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  2
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">4) Установи відповідність між виразами та їхнім значенням: <span class="red italic">(18·10):(15· 6)</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1">  10 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  2
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Установи відповідність між виразами та їхнім значенням: <span class="red italic">(64 000:100):(16· 5)</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  10 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  2
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">6) У саду зібрали 4 235 кг абрикосів, а слив — на 635 кг більше. Скільки зібрали слив?
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 4 235 : х =635
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 4 235 – х =635
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> х – 4 235 = 635
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127371&authkey=!AMWFMjds_7qMa7Q&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

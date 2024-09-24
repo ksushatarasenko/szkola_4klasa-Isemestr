@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №039</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 39. Письмове додавання багатоцифрових чисел</h2>
+            <h3>Сьогодні на уроці ми продовжимо вивчати багатоцифрові  числа та навчимося додавати такі числа у стовпчик.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127350&authkey=!ADGZQTsOidhpWxU" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pixwhrttk21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127350&authkey=!ADGZQTsOidhpWxU" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="2">
+                    <p class="vopros">1) Укажи у метрах число, що є сумою іменованих чисел:<span class="red italic">3 км 575 м + 75 км 431 м</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> 78 000 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 79 006 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 1 006 м
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Установи відповідність між виразами та їхнім значенням: <span class="red italic">16 032 + 13 452</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1">  29 484
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2">  61 021
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3">  49 623
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) Установи відповідність між виразами та їхнім значенням: <span class="red italic">28 340 + 32 681</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1">  29 484
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  61 021
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  49 623
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">4) Установи відповідність між виразами та їхнім значенням: <span class="red italic">45 352 + 4 271</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1">  29 484
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  61 021
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  49 623
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">5) Робітники відремонтували 3650 м шосе, і їм залишилося відремонтувати ще на 1270 м більше. Скільки всього метрів шосе потрібно було відремонтувати?
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  6 190 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  4 920 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  8 570 м
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">6) Укажи 3 числа, які  є продовженням ряду чисел, зберігаючи закономірність: <span class="red italic">1, 3, 7, 13, 21, 31, 43,  ?,  ?,  ?.</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 53, 71, 93
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 61, 71, 91
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 57, 73, 91
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                    <div class="question p">
+                        <button onclick="toggleAnswer(2)" class="answ">відповідь</button>
+                        <p id="answer2" class="answer blue">Закономірність у цьому ряді чисел полягає в тому, що кожне наступне число збільшується на +2, +4, +6, +8, +10, +12 і так далі.
+                        </p>
+                    </div>
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127351&authkey=!AIElXjJ_8uS1Yk0&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

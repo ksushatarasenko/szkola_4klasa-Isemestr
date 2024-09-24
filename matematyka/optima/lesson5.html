@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №005</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .answer {
+            display: block;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 132);
+            padding: 1%;
+            font-size: 18px;
+        }
+        .correct {
+            border: 2px solid green;
+            background-color: #b8e8c3;
+        }
+        .incorrect {
+            border: 2px solid red;
+            background-color: #e7b6ba;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 1. Повторення та поглиблення матеріалу за 3 клас</h1>
+            <h2>Урок 5. 12- і 24-годинний відлік часу</h2>
+            <!--  -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127068&authkey=!ABhTIBUhnZSMjV4" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/907ab8557fa34b8eb49a524677ca4400?themeId=21&templateId=30&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127067&authkey=!AP64z8crEuYcpVU" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+             <h2>Контрольні питання</h2>
+            <p class="p">Установите соответствие</p>
+
+    <div class="question zadanie">
+        <span>х : 5 = 15</span>
+        <select class="answer" id="q1">
+            <option value="">Выберите...</option>
+            <option value="600">600</option>
+            <option value="360">360</option>
+            <option value="75">75</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>х : 120 = 3</span>
+        <select class="answer" id="q2">
+            <option value="">Выберите...</option>
+            <option value="600">600</option>
+            <option value="360">360</option>
+            <option value="75">75</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>х : 4 = 150</span>
+        <select class="answer" id="q3">
+            <option value="">Выберите...</option>
+            <option value="600">600</option>
+            <option value="360">360</option>
+            <option value="75">75</option>
+        </select>
+    </div>
+
+    <div class="question zadanie">
+        <span>Укажи, які покази матиме електронний годинник о 9 год ранку: </span>
+        <select class="answer" id="q4">
+            <option value="">Выберите...</option>
+            <option value="09">09:00</option>
+            <option value="19">19:00</option>
+            <option value="21">21:00</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <span>Укажи, які покази матиме електронний годинник о 8 год вечора: </span>
+        <select class="answer" id="q5">
+            <option value="">Выберите...</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+            <option value="08">08:00</option>
+        </select>
+    </div>
+    <div class="question zadanie">
+        <div class="zadacha">
+            <p>Моряки налічили на першому острові 42 пінгвіни, на другому — у 3 рази менше, а на третьому — у 2 рази більше, ніж на другому. Скільки всього пінгвінів налічили моряки? </p>
+        </div>
+        <select class="answer" id="q6">
+            <option value="">Выберите...</option>
+            <option value="41">41</option>
+            <option value="84">84</option>
+            <option value="28">28</option>
+        </select>
+    </div>
+    
+    <button class="button" onclick="checkAnswers()">Отправить</button>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "75",
+                q2: "360",
+                q3: "600",
+                q4: "09",
+                q5: "20",
+                q6: "84"
+            };
+
+            let correctCount = 0;
+            for (let [question, answer] of Object.entries(correctAnswers)) {
+                const selectElement = document.getElementById(question);
+                const selectedAnswer = selectElement.value;
+
+                // Remove previous classes
+                selectElement.classList.remove('correct', 'incorrect');
+
+                if (selectedAnswer === answer) {
+                    selectElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    selectElement.classList.add('incorrect');
+                }
+            }
+
+            alert(`Вы правильно ответили на ${correctCount} из 6 вопросов.`);
+        }
+    </script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    <!-- <script src="./script_optima.js"></script> -->
+</body>
+
+</html>

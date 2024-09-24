@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №047</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 3. Додавання і віднімання багатоцифрових чисел</h1>
+            <h2>Урок 47. Усне додавання та віднімання іменованих чисел. Властивості прямокутника</h2>
+            <h3>Сьогодні ми навчимося швидко виконувати дії додавання та віднімання іменованих та круглих чисел, будемо розв’язувати задачі та вивчимо властивості однієї цікавої фігури.</h3>
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127389&authkey=!AE2utkRwIquHIcc" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=pxzh8469c21" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127388&authkey=!AGCOdKNls6b9Ezo" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи правильне твердження:
+                    </p>
+                    <label>
+                        <input type="radio" name="q1" value="1"> діагоналі прямокутника рівні
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> у прямокутнику усі кути гострі
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> усі сторони прямокутника різні
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи число, що є сумою іменованих чисел: <span class="red italic">7 км 650 м + 12 км 250 м</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 20 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 19 км 900 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 19 км 800 м
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Установи відповідність між виразами та їхнім значенням: <span class="red italic">60 т – 60 ц</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q3" value="1">  540 ц
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2">  5 км 994 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3">  5 т 940 кг
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                    
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">4) Установи відповідність між виразами та їхнім значенням: <span class="red italic">6 т – 60 кг</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q4" value="1">  540 ц
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2">  5 км 994 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3">  5 т 940 кг
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">5) Установи відповідність між виразами та їхнім значенням: <span class="red italic">6 км – 6 м</span>
+                    </p>
+                    <label>
+                        <input type="radio" name="q5" value="1">  540 ц
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="2">  5 км 994 м
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="3">  5 т 940 кг
+                    </label><br>
+                    <p class="marker" id="q5-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">6) Мама народилася, коли бабусі було 27 років. Дідусь старший від мами на 32 роки і зараз йому 64 роки. Скільки років бабусі?
+                    </p>
+                    <label>
+                        <input type="radio" name="q6" value="1"> 32 роки
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="2"> 64 роки
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="3"> 59 років
+                    </label><br>
+                    <p class="marker" id="q6-result"></p>
+                </div><hr>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127390&authkey=!ANCJaJnLrssGLQo&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+    <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+    
+</body>
+
+</html>

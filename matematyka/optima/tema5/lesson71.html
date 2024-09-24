@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №071</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 5. Площа фігури</h1>
+            <h2>Урок 71. Розгортка паралелепіпеда</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Сьогодні світ геометрії розкриє тобі ще деякі свої закони,  знову досліджуватимеш форми та фігури. Можливо, легко не буде, але цікаво та захоплююче – обов’язково!</h3>
+            <div class="p" >
+                <a href="https://elpom.com.ua/training/matematichnij-trenazher-br-dilennya-vid-1-do-10-br/" target="_blank" style="color: rgb(210, 33, 154);">Математичний тренажер. Ділення чисел від 1 до 10</a>
+            </div>
+        <!--  -->
+            
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130890&authkey=!AO2C472MjTU4kL4" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+           
+            
+            <!-- prezent -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=p6921tdwk19" frameborder="0"></iframe>
+            </div>
+            <!-- video 2 -->
+           
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130889&authkey=!ABjzsP9P530BFNI" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи вираз, числове значення якого: <span class="red">288 060</span> <br>
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q1" value="1"> 72 015 • 4
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 15 893 • 5
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 18 170 • 3
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи число, яке позначає площу прямокутника, довжина якого 18 см, а ширина – вдвічі менша від довжини:   <br>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 162 см<sup>2</sup>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 180 см<sup>2</sup>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 54 см
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div><hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">3) Велосипедист був у дорозі 10 годин. 4 години він їхав зі швидкістю 12 км/год. А решту дороги зі швидкістю 18 км/год. Яку відстань проїхав велосипедист за 10 год? <br>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 12 • 4 + 18 • (10 – 4)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 12 • 4 + 18 • 4
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 12 • 4 + 18 • 10
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2130891&authkey=!AGat_9PHe6NS4qE&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

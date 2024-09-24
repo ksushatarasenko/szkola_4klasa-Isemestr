@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №3-english</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .comic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bubble {
+            cursor: pointer;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        .quiz {
+            margin: 20px 0;
+        }
+
+        .quiz button {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>English - </h1>
+            <h2>№003 - <br>Smart Junior 4 Unit 1 Where Are You From? Smart Kids с. 10-11</h2>
+            <!-- video Lesson -->
+            <!-- <div class="video">
+                <iframe src="https://www.youtube.com/embed/aJSIoeCbtPI?si=3C_A1sKRr5GO3DdW" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div> -->
+            <div class="image two" style="width: 50%;">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkZhll32s5cOmgkmA?embed=1&width=988&height=1040"
+                    class="play-sound" data-audio="audio1" style="cursor: pointer;">
+                <p class="p20">Доброе утро, всем! Доброе утро, всем!​ Доброе утро, всем! Вы готовы к веселью? Встаньте и
+                    повернитесь. Затем сядьте на землю. ХЛОПНИТЕ! Теперь сложите руки на коленях​</p>
+            </div>
+            <audio id="audio1">
+                <source src="./audio/SJ4-M1/storiTimes/media1.mp3" type="audio/mpeg">
+            </audio>
+            <!--  -->
+            <h2>New words</h2>
+            <div class="flex">
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfkv4nFe3GkGw3U88g?embed=1&width=400&height=267"
+                            class="play-sound" data-audio="audio2" style="cursor: pointer;">
+                        <p class="p16">Ukraine -> Ukrainian</p>
+                    </div>
+                    <audio id="audio2">
+                        <source src="./audio/SJ4-M1/storiTimes/media3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfksj8mH5NgtLvxrZA?embed=1&width=612&height=382"
+                            class="play-sound" data-audio="audio3" style="cursor: pointer;">
+                        <p class="p16">the UK -> British</p>
+                    </div>
+                    <audio id="audio3">
+                        <source src="./audio/SJ4-M1/storiTimes/media4.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfkwk7pxAOztLf3iQA?embed=1&width=372&height=240"
+                            class="play-sound" data-audio="audio4" style="cursor: pointer;">
+                        <p class="p16">the USA -> American</p>
+                    </div>
+                    <audio id="audio4">
+                        <source src="./audio/SJ4-M1/storiTimes/media5.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- mexico -->
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfkt1uoB4sUQMUjxyg?embed=1&width=416&height=238"
+                            class="play-sound" data-audio="audio5" style="cursor: pointer;">
+                        <p class="p16">Mexico -> Mexican</p>
+                    </div>
+                    <audio id="audio5">
+                        <source src="./audio/SJ4-M1/storiTimes/media6.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- brazil -->
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkrzLar-JrOzk2Y-w?embed=1&width=612&height=429"
+                            class="play-sound" data-audio="audio6" style="cursor: pointer;">
+                        <p class="p16">Brazil -> Brazilian</p>
+                    </div>
+                    <audio id="audio6">
+                        <source src="./audio/SJ4-M1/storiTimes/media7.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- korea -->
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfku-NSO2bjNwhsARA?embed=1&width=612&height=368"
+                            class="play-sound" data-audio="audio7" style="cursor: pointer;">
+                        <p class="p16">Korea -> Korean</p>
+                    </div>
+                    <audio id="audio7">
+                        <source src="./audio/SJ4-M1/storiTimes/media8.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- china -->
+                <div style="width: 15%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkxKNCnQlHZ92kiGg?embed=1&width=646&height=446"
+                            class="play-sound" data-audio="audio8" style="cursor: pointer;">
+                        <p class="p16">China -> Chinese</p>
+                    </div>
+                    <audio id="audio8">
+                        <source src="./audio/SJ4-M1/storiTimes/china.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- city -->
+                <div style="width: 20%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfklGw1snmPxnylT4g?embed=1&width=790&height=612"
+                            class="play-sound" data-audio="audio9" style="cursor: pointer;">
+
+                    </div>
+                    <audio id="audio9">
+                        <source src="./audio/SJ4-M1/storiTimes/city.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- town -->
+                <div style="width: 20%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkmKnvCRJbOaDvObA?embed=1&width=790&height=612"
+                            class="play-sound" data-audio="audio10" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio10">
+                        <source src="./audio/SJ4-M1/storiTimes/town.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- village -->
+                <div style="width: 20%;">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfknlivcAEP8Ti-gag?embed=1&width=790&height=612"
+                            class="play-sound" data-audio="audio11" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio11">
+                        <source src="./audio/SJ4-M1/storiTimes/village.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <!--  -->
+            <div class="video">
+                <iframe src="https://learningapps.org/watch?v=po32suehn21" frameborder="0"></iframe>
+            </div>
+            <!-- 1 -->
+            <h2>ex.1, p.10, Listen and read. Then answer. Where are the children going on Monday? </h2>
+            <div class="two">
+                <div>
+                    <div class="image" style="width: 120%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkamkPGG2QNR4lEww?embed=1&width=1798&height=870"
+                            class="play-sound" data-audio="audio12" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio12">
+                        <source src="./audio/SJ4-M1/storiTimes/media9.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- 2 -->
+                <div>
+                    <div class="image" style="width: 120%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkbxuxIAzw4-EhRXA?embed=1&width=1798&height=870"
+                            class="play-sound" data-audio="audio13" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio13">
+                        <source src="./audio/SJ4-M1/storiTimes/media10.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="two">
+                <!-- 3 -->
+                <div>
+                    <div class="image" style="width: 120%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkcYUsJGKOk3FqLtQ?embed=1&width=1798&height=870"
+                            class="play-sound" data-audio="audio14" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio14">
+                        <source src="./audio/SJ4-M1/storiTimes/media11.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- 4 -->
+                <div>
+                    <div class="image" style="width: 120%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkdrU7_mj5W3iekjA?embed=1&width=1798&height=870"
+                            class="play-sound" data-audio="audio15" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio15">
+                        <source src="./audio/SJ4-M1/storiTimes/media12.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="two">
+                <!-- 5 -->
+                <div>
+                    <div class="image" style="width: 120%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkeZ_ay_nMAeGvUdA?embed=1&width=1798&height=870"
+                            class="play-sound" data-audio="audio16" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio16">
+                        <source src="./audio/SJ4-M1/storiTimes/media13.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- 6 -->
+                <div>
+                    <div class="image" style="width: 120%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkfMQQ-cy7xBY0veA?embed=1&width=1798&height=862"
+                            class="play-sound" data-audio="audio17" style="cursor: pointer;">
+                    </div>
+                    <audio id="audio17">
+                        <source src="./audio/SJ4-M1/storiTimes/media14.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div>
+                <button onclick="toggleHints('hints1')" style="margin-left: 47%;">translation</button>
+                <div id="hints1" style="display: none;">
+                    <div class="two p14">
+                        <div>
+                            <p>1. Monday morning. Greg and Anna are going on a school trip to the museum. There is a new
+                                student in their class.</p>
+                            <p>2. Hi, I’m Greg. What’s your name?</p>
+                            <p>3. I’m Carlos</p>
+                            <p>4. Where are you from, Carlos?</p>
+                            <p>5. I’m from Mexico, but I live here now, in London. I like this city.</p>
+                            <p>6. Oh, you’re Mexican. I’m Anna.</p>
+                            <p>7. And I’m Sandy. I’m Korean.</p>
+                            <p>8. Oh! Hi.</p>
+                            <p>9. Hey, look at that!</p>
+                            <p>10. Achoo!</p>
+                            <p>11. He's alive!</p>
+                            <p>12. Ah!!</p>
+                            <p>13. Oh, sorry, guys!</p>
+                            <p>14. Greg!</p>
+                        </div>
+                        <div>
+                            <p>1. Понедельник утром. Грег и Анна отправляются на школьную экскурсию в музей. В их классе
+                                новый ученик.</p>
+                            <p>2. Привет, я Грег. Как тебя зовут?</p>
+                            <p>3. Меня зовут Карлос.</p>
+                            <p>4. Откуда ты, Карлос?</p>
+                            <p>5. Я из Мексики, но сейчас живу здесь, в Лондоне. Мне нравится этот город.</p>
+                            <p>6. О, ты мексиканец. Я Анна.</p>
+                            <p>7. А я Сэнди. Я кореянка.</p>
+                            <p>8. О, привет.</p>
+                            <p>9. Эй, посмотрите на это!</p>
+                            <p>10. Ух, ты!</p>
+                            <p>11. Он жив!</p>
+                            <p>12. Ах!!</p>
+                            <p>13. Ой, извините, ребята!</p>
+                            <p>14. Грег!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 2 -->
+            <h2>Grammar</h2>
+            <h3>Play ask and answer</h3>
+            <div class="image">
+                <div class="image" style="width: 120%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkghW63magZsfUeLQ?embed=1&width=1798&height=858"
+                        class="play-sound" data-audio="audio18" style="cursor: pointer;">
+                </div>
+                <audio id="audio18">
+                    <source src="./audio/SJ4-M1/storiTimes/media22.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <!--  -->
+
+            <div class="image">
+                <audio src="./audio/SJ4-M1/011_M01_SMART_KIDS_ACT_3.mp3" controls></audio>
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127204&authkey=%21AAKgJ3A4SoLS6Ls&width=1438&height=520"
+                    alt="11_3">
+            </div>
+            <div class="question-set" id="set2">
+                <h3></h3>
+                <div class="dialog italic two">
+                    <div>
+                        <div class="colors">
+                            <p class="p20 italic ">1. Lin => <input type="text" data-answer="b" class="line_5"></p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">2. Roberto => <input type="text" data-answer="a" class="line_5"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="colors">
+                            <p class="p20 italic ">3. Daniel => <input type="text" data-answer="d" class="line_5"></p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">4. Oleh => <input type="text" data-answer="c" class="line_5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <button onclick="checkAnswers('set2')">Check</button>
+                <div>
+                    <button onclick="toggleHints('hints2')">answer</button>
+                    <div id="hints6" style="display: none;">
+                        <p>1. Lin => Chinese</p>
+                        <p>2. Roberto => Brazilian</p>
+                        <p>3. Daniel => British</p>
+                        <p>4. Oleh => Ukrainian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/b098effd1ba54925902fb347ea694e8f?themeId=41&templateId=38&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="image" style="width: 120%;">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfkhyp8JP1KfJw-QDA?embed=1&width=1798&height=858"
+                    class="play-sound" data-audio="audio19" style="cursor: pointer;">
+            </div>
+            <audio id="audio19">
+                <source src="./audio/SJ4-M1/storiTimes/media24.mp3" type="audio/mpeg">
+            </audio>
+
+
+
+            <!--  -->
+
+        </main>
+    </div>
+
+    <!-- script -->
+    <script>
+        // Задаем разную скорость для каждого аудио
+        document.getElementById('audio8').playbackRate = 0.75;
+        document.getElementById('audio9').playbackRate = 0.85;
+        document.getElementById('audio10').playbackRate = 0.85;
+        document.getElementById('audio11').playbackRate = 0.85;
+    </script>
+   
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

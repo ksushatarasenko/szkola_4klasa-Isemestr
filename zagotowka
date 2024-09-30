@@ -156,10 +156,42 @@
 ///podskazkaOptima
 
 <div class="hint2-container" onclick="toggleHint2(this)">
-                    <div class="hint2-header">
-                        
-                    </div>
-                    <div class="hint2-content">
-                        Число ділиться на 5, якщо воно закінчується на 0 або 5.
-                    </div>
-                </div>
+    <div class="hint2-header"></div>
+    <div class="hint2-content">
+        Число ділиться на 5, якщо воно закінчується на 0 або 5.
+    </div>
+</div>
+
+<!-- Выбор ответа с выпадающего списка -->
+<div class="select-container">
+    <div class="blockSelect">
+        <label for="step1">3 • (844 – 800) – (270 + 690) : 30  = </label>
+        <select id="step1" data-answer="100">
+            <option value="">значення</option>
+            <option value="32">32</option>
+            <option value="100">100</option>
+            <option value="132">132</option>
+            <option value="200">200</option>
+        </select>
+        
+    </div>
+    <div class="blockSelect">
+        <label for="step1">1) </label>
+        <select id="step1_1" data-answer="844 - 800">
+            <option value=""></option>
+            <option value="3 • 84">3 • 844</option>
+            <option value="844 - 800">844 - 800</option>
+            <option value="5 : 450">800 - 270</option>
+        </select>
+        <span>=</span>
+        <select id="step1_2" data-answer="44">
+            <option value=""></option>
+            <option value="847">847</option>
+            <option value="66">66</option>
+            <option value="44">44</option>
+            <option value="420">420</option>
+        </select>
+    </div>
+
+    <button onclick="checkAnswersSelect(this)">Обчислити</button>
+</div>

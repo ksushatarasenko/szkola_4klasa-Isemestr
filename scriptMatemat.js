@@ -133,3 +133,33 @@ function toggleHint2(element) {
     element.classList.toggle('active');
 }
 
+// ------- Выбор ответа с выпадающего списка  -----
+
+function checkAnswersSelect(button) {
+    // Найдем контейнер, который содержит текущую кнопку
+    const container = button.closest('.select-container');
+    
+    // Получим все select элементы внутри этого контейнера
+    const selects = container.querySelectorAll('select');
+    
+    let allCorrect = true;
+    
+    selects.forEach(select => {
+        const correctAnswer = select.getAttribute('data-answer');
+        const selectedAnswer = select.value;
+
+        if (selectedAnswer === correctAnswer) {
+            select.classList.add('correct');
+            select.classList.remove('incorrect');
+        } else {
+            select.classList.add('incorrect');
+            select.classList.remove('correct');
+            allCorrect = false;
+        }
+    });
+
+    
+}
+
+//  ---------- end Выбор ответа с выпадающего списка --------------
+

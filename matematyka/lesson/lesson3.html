@@ -32,7 +32,7 @@
             <!-- 25 -->
             <h4>25. Вибери круглі числа серед поданих. Запиши їх.</h4>
             <p class="red">Числа, які закінчуються нулем, називають круглими числами.</p>
-            <div id="quiz-form">
+            <div id="quiz-form-25">
                 <div class="questions">
                     <div class="question" data-correct="0,2,3,4,6,9">
                         <div class="displayFlex italic flexNowrap" style="margin-left: -7%;">
@@ -69,8 +69,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="checkAnswers" onclick="checkAnswersLabel()">Chek</button>
-                <p id="q1-result" style="width: 20%;"></p>
+                <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-25', 'q25-result')">Chek</button>
+                <p id="q25-result" style="width: 20%;"></p>
             </div>
             <hr>
             <!-- end 25 -->
@@ -350,6 +350,8 @@
         </main>
     </div>
 
+    <script src="../../scriptMatemat.js"></script>
+    <script src="../../checkRadio.js"></script>
     <script src="../../scriptMatemat.js"></script>
 </body>
 

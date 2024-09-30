@@ -573,6 +573,20 @@ th {
    gap: 5%;
    justify-content:center;
 }
+/* ------- */
+.blockZadanie{
+   border: 1px solid gray;
+   padding: 1%;
+   margin: 15px 0;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* небольшая тень */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* плавные переходы */
+   border-top: 2px solid coral;
+}
+.blockZadanie:hover {
+   transform: scale(1.05); /* увеличение на 5% при наведении */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* усиление тени при наведении */
+}
+/* --------- */
 
 .zadanie select{
    background-color: rgb(194, 192, 192);
@@ -627,14 +641,16 @@ label{
    color: wheat;
    background-color: red;
 }
-.button {
+
+/* ------ BUTTON ------------ */
+/* .button {
    margin-top: 20px;
    background-color: rgb(0, 255, 132);
    padding: 1%;
    font-size: 18px;
-}
+} */
 button{
-   margin-top: 1%;
+   margin-top: 4%;
    background-color: rgb(168, 250, 210);
    font-size: 16px;
    width: 100px;
@@ -646,8 +662,11 @@ button{
    justify-content: space-around;
    gap: 3%;
    align-items: center;
-   width: 30%;
+   width: 90%;
+   margin: 10px auto;
 }
+
+/* -------- END BUTTON ------------ */
 .marker {
    font-weight: bold;
 }
@@ -669,7 +688,7 @@ button{
 .play-sound:hover{
    transform: scale(1.1);
 }
-/* LINE */
+/* --------------- LINE ------------------*/
 .line{
    width: 200px;
 }
@@ -704,15 +723,7 @@ button{
    width: 65px;
    font-size: 20px;
 }
-/*  */
-.question {
-   margin-top: 2%;
-}
-
-.questions {
-   margin-bottom: 2%;
-}
-
+/* ----------- END LINE --------------- */
 
 input {
    font-size: 20px;
@@ -766,6 +777,7 @@ input {
 .questions {
    margin-bottom: 2%;
 }
+
 .chek{
    width: 150px;
    text-align: center;
@@ -775,19 +787,19 @@ input {
    width: 75px;
    height: 70px;
    padding: 2%;
-   margin-left: 5%;
+   margin-right: 10px;
 }
 .smile img{
    width: 75px;
    height: 70px;
 }
-/* pidkazkaOptima */
+/* -------------- POKAZ OTWETA OPTIMA -------------*/
 .hint2-container {
    background-color: #e8f4fd;
    border-radius: 10px;
    border: 1px solid #b9d6f3;
    padding: 5px 20px;
-   margin: 10px 0 20px;
+   margin: 10px auto;
    cursor: pointer;
    width: 80%;
    position: relative;
@@ -800,7 +812,7 @@ input {
    justify-content: space-between;
    align-items: center;
    position: relative;
-   font-size: 18px;
+   font-size: 16px;
    color: #2d2d2d;
 }
 
@@ -843,6 +855,9 @@ input {
    opacity: 0; /* Для плавного появления и исчезновения текста */
    transition: opacity 0.3s ease-in-out, max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
 }
+.hint2-content p{
+   font-size: 18px;
+}
 
 /* Раскрытие блока */
 .hint2-container.active .hint2-content {
@@ -865,12 +880,37 @@ input {
    transform: rotate(180deg);
 }
 
+/* ---------- END POKAZ OTWETA OPTIMA ------------------ */
 
+/* ------------- ВЫПАДАЮЩИЙ СПИСОК --------------------- */
 
+.select-container {
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   margin-top: 20px;
+   
+}
+.select-container select, .select-container input {
+   margin: 10px 0;
+}
 
+.blockSelect {
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   gap: 3px;
+}
+.blockSelect select{
+   font-size: 16px;
+   padding: 3px;
+   border: 1px solid gray;
+   border-radius: 5px;
+   width: 100px;
+}
 
+/* ------------ end ВЫПАДАЮЩИЙ СПИСОК ------------------ */
 
-/*  */
 
 
 

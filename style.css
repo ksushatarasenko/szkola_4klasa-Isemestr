@@ -732,6 +732,8 @@ input {
    /* Ширина поля ввода */
    text-align: center;
    /* Текст по центру */
+   background-color: rgb(241, 238, 238);
+   border: 1px solid gray;
 }
 
 .chek{
@@ -910,6 +912,46 @@ input {
 }
 
 /* ------------ end ВЫПАДАЮЩИЙ СПИСОК ------------------ */
+/* -------- SETKA ----------- */
+.setka{
+   width: 100%;
+   max-width: 120px;
+   max-height: 120px;
+}
+.setka td{
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   vertical-align: bottom;
+   border: 1px solid #ccc;
+}
+/* Стили для строки с большими числами */
+.standart td {
+   font-size: 20px;  /* Увеличенный шрифт для стандартных чисел */
+   color: #000; /* Чёрный цвет для основного текста */
+   border: 1px solid #a2a1a1;
+   width: 40px;
+   height: 40px;
+}
+/* Стили для мини чисел (в уме) */
+.mini td input {
+   color: rgb(4, 4, 137); /* Цвет для текста */
+   font-size: 14px; /* Размер шрифта */
+   width: 25px;  /* Поля ввода на всю ширину ячеек */
+   border: none;  /* Без рамки для мини полей */
+   text-align:end; /* Выравнивание текста по правому краю */
+   box-sizing: border-box;
+}
+/* Дополнительные стили для полей ввода */
+input.line_5 {
+   font-size: 18px; /* Стандартный размер для чисел ввода */
+   border: 1px solid #999; /* Рамка для текстовых полей */
+   text-align: center; /* Выравнивание текста по центру */
+   box-sizing: border-box;
+}
+input.line_5:focus {
+   outline: 2px solid #00f; /* Синий фокус */
+}
 
 
 

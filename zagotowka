@@ -195,3 +195,58 @@
 
     <button onclick="checkAnswersSelect(this)">Обчислити</button>
 </div>
+
+<!-- tablica umnogenie -->
+
+<div class="question-set" id="set90">
+    <div class="dialog promer flex">
+        <table class="setka">
+            <tr class="mini">
+                <td  class="mini"><input type="text" data-answer="" class="line_5"></td>
+                <td class="mini"><input type="text" data-answer="2" class="line_5"></td>
+                <td class="mini"><input type="text" data-answer="3" class="line_5"></td>
+                <td class="mini"><input type="text" data-answer="" class="line_5"></td>
+            </tr>
+            <tr class="standart">
+                <td></td>
+                <td></td>
+                <td>4</td>
+                <td>7</td>
+
+            </tr>
+            <tr class="standart">
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+            </tr>
+            <tr class="standart">
+                <td></td>
+                <td class="p20"><input type="text" data-answer="2" class="line_5">
+                </td>
+                <td class="p20"><input type="text" data-answer="3" class="line_5">
+                </td>
+                <td class="p20"><input type="text" data-answer="5" class="line_5">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="flexbutton">
+    <div>
+        <button onclick="checkAnswersTrue('set90', 'smile-set90')">Check</button>
+    </div>
+    <div id="smile-set90" class="smile"></div>
+</div>
+
+<div class="hint2-container" onclick="toggleHint2(this)">
+    <div class="hint2-header"></div>
+    <div class="hint2-content">
+        <div class="image" style="width: 110%;">
+            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgftdGtP5Jw4ackHSxg?embed=1&width=1174&height=226"
+                alt="otwet90">
+        </div>
+    </div>
+</div>
+
+<!-- end tablica umnogenie -->

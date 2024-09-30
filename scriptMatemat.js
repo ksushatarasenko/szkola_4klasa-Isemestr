@@ -73,13 +73,20 @@ function checkAnswersLabel(formId, resultId) {
 function checkAnswersTrue(setId, smileId) {
     const set = document.getElementById(setId);
     const inputs = set.querySelectorAll('input[data-answer]');
+
     
+
     let correctAnswers = [];
     let userAnswers = [];
     
     inputs.forEach(input => {
         const correctAnswer = input.getAttribute('data-answer').trim();
         const userAnswer = input.value.trim();
+
+        // Игнорируем пустые data-answer
+    if (correctAnswer === '') {
+        return; // Пропускаем проверку этого поля
+    }
 
         correctAnswers.push(correctAnswer);
         userAnswers.push(userAnswer);

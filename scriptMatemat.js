@@ -74,25 +74,28 @@ function checkAnswersTrue(setId, smileId) {
     const set = document.getElementById(setId);
     const inputs = set.querySelectorAll('input[data-answer]');
 
-    
-
     let correctAnswers = [];
     let userAnswers = [];
-    
+
     inputs.forEach(input => {
         const correctAnswer = input.getAttribute('data-answer').trim();
         const userAnswer = input.value.trim();
 
         // Игнорируем пустые data-answer
-    if (correctAnswer === '') {
-        return; // Пропускаем проверку этого поля
-    }
+        if (correctAnswer === '') {
+            return; // Пропускаем проверку этого поля
+        }
 
         correctAnswers.push(correctAnswer);
         userAnswers.push(userAnswer);
 
-        // Порівняння як рядків або як чисел (в залежності від ситуації)
-        if (userAnswer !== '' && parseFloat(userAnswer) == parseFloat(correctAnswer)) {
+        // Проверка для символов (*, +, :, -) и чисел
+        if (isSpecialSymbol(correctAnswer) && correctAnswer === userAnswer) {
+            input.classList.add('correct');
+            input.classList.remove('incorrect');
+        } 
+        // Сравнение как чисел, если это не символы
+        else if (userAnswer !== '' && parseFloat(userAnswer) == parseFloat(correctAnswer)) {
             input.classList.add('correct');
             input.classList.remove('incorrect');
         } else {
@@ -103,7 +106,7 @@ function checkAnswersTrue(setId, smileId) {
 
     const allCorrect = arraysEqual(userAnswers, correctAnswers);
 
-    // Використовуємо переданий ідентифікатор для виведення результату в потрібне місце
+    // Отображение результата с учетом правильности ответов
     const resultElement = document.getElementById(smileId);
     if (allCorrect) {
         resultElement.innerHTML = "<img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
@@ -112,10 +115,20 @@ function checkAnswersTrue(setId, smileId) {
     }
 }
 
-// Функція для перевірки масивів
+// Функция для проверки специальных символов
+function isSpecialSymbol(value) {
+    return ['*', '+', ':', '-'].includes(value);
+}
+
+// Функция для сравнения массивов
 function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
     for (let i = 0; i < arr1.length; i++) {
+        // Для символов проверяем точное совпадение строк
+        if (isSpecialSymbol(arr1[i]) && arr1[i] === arr2[i]) {
+            continue;
+        }
+        // Для чисел сравниваем как числа
         if (parseFloat(arr1[i]) !== parseFloat(arr2[i])) return false;
     }
     return true;

@@ -535,6 +535,10 @@ p{
    width: 100%;
    height: 2px;
  }
+ 
+ .urovnenie{
+   width: 200px;
+ }
 
  /* Таблица*/
  table {

@@ -78,8 +78,8 @@ function checkAnswersTrue(setId, smileId) {
     let userAnswers = [];
 
     inputs.forEach(input => {
-        const correctAnswer = input.getAttribute('data-answer').trim();
-        const userAnswer = input.value.trim();
+        const correctAnswer = removeSpaces(input.getAttribute('data-answer').trim());
+        const userAnswer = removeSpaces(input.value.trim());
 
         // Игнорируем пустые data-answer
         if (correctAnswer === '') {
@@ -89,7 +89,7 @@ function checkAnswersTrue(setId, smileId) {
         correctAnswers.push(correctAnswer);
         userAnswers.push(userAnswer);
 
-        // Проверка для символов (*, +, :, -) и чисел
+        // Проверка для символов (*, +, :, -, <, >, =) и чисел
         if (isSpecialSymbol(correctAnswer) && correctAnswer === userAnswer) {
             input.classList.add('correct');
             input.classList.remove('incorrect');
@@ -117,7 +117,7 @@ function checkAnswersTrue(setId, smileId) {
 
 // Функция для проверки специальных символов
 function isSpecialSymbol(value) {
-    return ['*', '+', ':', '-'].includes(value);
+    return ['*', '+', ':', '-', '<', '>', '=', '.'].includes(value);
 }
 
 // Функция для сравнения массивов
@@ -133,6 +133,12 @@ function arraysEqual(arr1, arr2) {
     }
     return true;
 }
+
+// Функция для удаления всех пробелов из строки
+function removeSpaces(value) {
+    return value.replace(/\s+/g, '');
+}
+
 
 
 

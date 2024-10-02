@@ -706,22 +706,22 @@ button{
 }
 .line_4{
    width: 40px;
-   font-size: 20px;
+   font-size: 18px;
 }
 .line_5{
    width: 30px;
-   font-size: 20px;
+   font-size: 18px;
 }
 .line_6{
    width: 50px;
-   font-size: 20px;
+   font-size: 18px;
 }
 .line_7{
    width: 400px;
 }
 .line_8{
    width: 65px;
-   font-size: 20px;
+   font-size: 18px;
 }
 /* ----------- END LINE --------------- */
 
@@ -798,9 +798,9 @@ input {
    border-radius: 10px;
    border: 1px solid #b9d6f3;
    padding: 5px 20px;
-   margin: 10px auto;
+   margin: 20px auto;
    cursor: pointer;
-   width: 80%;
+   width: 90%;
    position: relative;
    overflow: hidden;
 }
@@ -849,8 +849,7 @@ input {
    max-height: 0;
    overflow: hidden;
    transition: max-height 0.6s ease-in-out, padding 0.3s ease-in-out;
-   padding-top: 0;
-   padding-bottom: 0;
+   padding: 0 2px 0 2px;
    opacity: 0; /* Для плавного появления и исчезновения текста */
    transition: opacity 0.3s ease-in-out, max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
 }
@@ -860,12 +859,11 @@ input {
 
 /* Раскрытие блока */
 .hint2-container.active .hint2-content {
-   padding-top: 1%;
-   padding-bottom: 5%;
+   padding: 0 2px 5px 2px;
    max-height: 1000px; /* Достаточно для раскрытия текста */
    opacity: 1; /* Плавное появление */
-   margin-left: 5%;
-   max-width: 90%;
+   
+   max-width: 100%;
 }
 
 /* Плавное скрытие иконки при активации */

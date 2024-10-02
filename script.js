@@ -20,26 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Скрипт для воспроизведения звука при нажатии на картинку
-// Функция для воспроизведения звука
-document.querySelectorAll('.play-sound').forEach(function(image) {
-    image.addEventListener('click', function() {
-        // Получаем ID аудио из data-атрибута
-        var audioId = this.getAttribute('data-audio');
-        var audio = document.getElementById(audioId);
 
-        // Если аудио уже воспроизводится - ставим паузу
-        if (!audio.paused && !audio.ended) {
-            audio.pause();
-        } else {
-            // Если аудио окончено, запускаем его с начала
-            if (audio.ended) {
-                audio.currentTime = 0; // Начало с начала, если завершилось
-            }
-            audio.play();  // Воспроизведение звука
-        }
-    });
-});
 // 
 // функция кнопки ответ
 

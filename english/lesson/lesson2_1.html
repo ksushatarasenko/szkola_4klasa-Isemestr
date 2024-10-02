@@ -29,6 +29,7 @@
             <h2>№002-1 - Smart Junior 4 Unit 1 <br>Where Are You From? Sing a Song с. 9</h2>
             <!-- goodmorning -->
             <div class="blockEnglish">
+
                 <div class="image" style="width:80%;">
                     <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkMeSkR1QrCp6lnFw?embed=1&width=1612&height=1072"
                         class="play-sound" data-audio="audio1" style="cursor: pointer;">
@@ -120,6 +121,7 @@
             </div>
             <!-- ex.1, p. 9 -->
             <div class="blockEnglish">
+                <p><span style="color: #ff00ff;"><strong>Exercise 1</strong></span></p>
                 <h2>ex.1, p.9. Listen and point. Then sing.</h2>
                 <div class="image">
                     <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkNNfqSrNLxUn3XGw?embed=1&width=2302&height=1060"
@@ -132,24 +134,33 @@
                     controls></audio>
 
                 <div>
-                    <div class="three">
-                        <div>
-                            <p style="font-size: 20px;"> Мы все друзья </p>
-                            <p class="p20">Со всего света.</p>
-                            <p class="p20">Мы поддерживаем друг друга.</p>
-                            <p class="p20">Мы не одни.</p>
+                    <h4 style="text-align: center;">Friends from around the world <br>Друзі з усього світу</h4>
+                    <div>
+                        <p><strong>We’re all friends From around the world. We’ve got each other. We’re not
+                                alone.</strong></p>
+                        <!--  -->
+                        <div class="hint2-container" onclick="toggleHint2(this)">
+                            <div class="hint2-header"></div>
+                            <div class="hint2-content">
+                                <p>Ми всі друзі з усього світу. Ми знайшли один одного. Ми не самотні.</p>
+                            </div>
                         </div>
-                        <div>
-                            <p style="font-size: 20px;">Меня зовут Иван. </p>
-                            <p class="p20">Я из Украины.</p>
-                            <p class="p20">Она из Великобритании.</p>
-                            <p class="p20">Её зовут Джейн.</p>
+
+                        <p><strong>My name is Ivan. I’m from Ukraine. She’s from the UK. Her name is Jane.</strong></p>
+                        <div class="hint2-container" onclick="toggleHint2(this)">
+                            <div class="hint2-header"></div>
+                            <div class="hint2-content">
+                                <p>Мене звуть Іван. Я з України. Вона з Великобританії. Її звуть Джейн.</p>
+                            </div>
                         </div>
-                        <div>
-                            <p style="font-size: 20px;">Это Паоло.</p>
-                            <p class="p20">Он из Бразилии.</p>
-                            <p class="p20">Его друг из США.</p>
-                            <p class="p20">Её зовут Джилл.</p>
+
+                        <p><strong>This is Paolo. He’s from Brazil. His friend’s from the USA. Her name is
+                                Jill.</strong></p>
+                        <div class="hint2-container" onclick="toggleHint2(this)">
+                            <div class="hint2-header"></div>
+                            <div class="hint2-content">
+                                <p>Це Паоло. Він з Бразилії. Його подруга із США. Її звуть Джилл.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,26 +176,65 @@
 
             <!--  -->
             <div class="blockEnglish">
-                <h3>2. Играем. <br>
-                    Пример диалога: <br>
-                    She’s from the USA. (Она из США.) <br>
-                    It’s Jill. (Это Джилл.)</h3>
+                <p><span style="color: #ff00ff;"><strong>Exercise </strong><strong>2 - 3</strong></span></p>
+                <h3>2. Играем.</h3>
                 <div class="image">
                     <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127199&authkey=%21AOgtfbioQ2KcHL8&width=1522&height=568"
                         alt="9_2-3">
                 </div>
-                <h3>3. Выберите человека из упражнения 1 и напишите в своей тетради, например: «Jane is from the UK.
-                    (Джейн
-                    из Великобритании.)»</h3>
+                
+                    <div class="question-set" id="set9-2">
+                        <div class="dialog primer">
+                            <div class="colors">
+                                <p class="p20"><strong>– It’s Jill.</strong> - Це Джилл.</p>
+                                <p class="p20"><strong>– She’s from the USA.</strong> - Вона зі США.</p> 
+                                <p class="p20"><strong>Jill is from the USA</strong> - Джилл з США.</p>
+                            </div><br>
+                            <div class="colors">
+                                <p> - Це Паоло. => - <input type="text" data-answer="It’s Paolo" class="line_3">.</p>
+                                <p> - Він із Бразилії. => - <input type="text" data-answer="He’s from Brazil" class="line_3">.</p>
+                                <p class="p20"> Паоло з Бразилії. - <input type="text" data-answer="Paolo is from the Brazil" class="line_3">.</p>
+                                <br>
+                                <p> - Це Джейн. => - <input type="text" data-answer="It’s Jane" class="line_3">.</p>
+                                <p> - Вона з Великобританії. => - <input type="text" data-answer="She’s from the UK" class="line_3">.</p>
+                                <p class="p20"> Джейн з Великобритании. - <input type="text" data-answer="Jane is from the UK" class="line_3">.</p>
+                                <br>
+                                <p> - Це Іван. => - <input type="text" data-answer="It’s Ivan" class="line_3">.</p>
+                                <p> - Він з України. => - <input type="text" data-answer="He’s from Ukraine" class="line_3">.</p>
+                                <p class="p20"> Іван з України. - <input type="text" data-answer="Іvan is from  Ukraine" class="line_3">.</p>
+                            </div>
+                                
+                        </div>
+                    </div>
+                    
+                    <div class="flexbutton">
+                        <div>
+                            <button onclick="checkAnswersTrue('set9-2', 'smile-set9-2')">Check</button>
+                        </div>
+                        <div id="smile-set9-2" class="smile"></div>                    
+                    </div>
+                    <div class="hint2-container" onclick="toggleHint2(this)">
+                        <div class="hint2-header"></div>
+                        <div class="hint2-content">
+                            <p><strong>– She’s from the USA.</strong> - Вона зі США.</p>
+                            <p><strong>– It’s Jill.</strong> - Це Джилл.</p>
+                            <p>– He’s from Brazil. - Він із Бразилії.</p>
+                            <p>– It’s Paolo. - Це Паоло.</p>
+                            <p>– She’s from the UK. - Вона з Великобританії.</p>
+                            <p>– It’s Jane. - Це Джейн.</p>
+                            <p>– He’s from Ukraine. - Він з України.</p>
+                            <p>– It’s Ivan. - Це Іван.</p>
+                        </div>
+                    </div>
             </div>
             <div class="fonPink">
                 <h3 class="blue">Грамматика</h3>
-                <p class="p">Глагол "to be" переводится на русский язык как "быть", "являться", "находиться". В
+                <p class="p20">Глагол "to be" переводится на русский язык как "быть", "являться", "находиться". В
                     настоящем
                     времени он изменяется в зависимости от лица и числа. Давайте рассмотрим, как его использовать с
                     различными местоимениями.</p>
                 <h4 class="green p">Используйте следующие конструкции</h4>
-                <ul class="p">
+                <ul class="p20 marginLeft">
                     <li>I’m (Я есть)</li>
                     <li>He’s (Он есть)</li>
                     <li>She’s (Она есть)</li>
@@ -193,7 +243,7 @@
                     <li>They’re (Они есть)</li>
                 </ul>
                 <h4 class="green p">Пример:</h4>
-                <ul class="p">
+                <ul class="p20 marginLeft">
                     <li>I’m from Ukraine. (Я из Украины.)</li>
                     <li>I’m from Ukraine. (Я из Украины.)</li>
                     <li>I’m from Ukraine. (Я из Украины.)</li>
@@ -204,7 +254,7 @@
                         <p>Заполните пропуски:</p>
                         <h4>Fill in the Blanks</h4>
 
-                        <li class="question" >
+                        <li class="question">
                             Jill <input type="text" id="q1" placeholder="___"> from the USA.
                         </li>
                         <li class="question">
@@ -235,7 +285,7 @@
                     width="500" height="380" frameborder="0" allowfullscreen></iframe>
             </div>
             <!-- end -->
-             <div class="blockEnglish">
+            <div class="blockEnglish">
                 <div class="image">
                     <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkP2QVNKus6BXZzDA?embed=1&width=2164&height=1032"
                         class="play-sound" data-audio="audio11" style="cursor: pointer;">
@@ -243,7 +293,7 @@
                 <audio id="audio11">
                     <source src="./audio/2_1/media11.mp3" type="audio/mpeg">
                 </audio>
-             </div>
+            </div>
         </main>
     </div>
 
@@ -253,34 +303,8 @@
 
 
 
-    <script>
-        function checkAnswerss() {
-            const answers = {
-                q1: "is",
-                q2: "is",
-                q3: "are",
-                q4: "am"
-            };
 
-            let correct = 0;
-            let total = Object.keys(answers).length;
-
-            for (let key in answers) {
-                let userAnswer = document.getElementById(key).value.trim().toLowerCase();
-                if (userAnswer === answers[key]) {
-                    correct++;
-                    document.getElementById(key).style.backgroundColor = "lightgreen";
-                } else {
-                    document.getElementById(key).style.backgroundColor = "lightcoral";
-                }
-            }
-
-            document.getElementById("result").innerText = `You got ${correct} out of ${total} correct!`;
-        }
-    </script>
-
-
-    <script src="../../script.js"></script>
+    <script src="../../scriptEnglish.js"></script>
 </body>
 
 </html>

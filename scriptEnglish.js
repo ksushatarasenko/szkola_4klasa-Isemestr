@@ -70,8 +70,17 @@ function checkAnswersTrue(setId, smileId) {
 }
 
 // Функция для проверки специальных символов
-function isSpecialSymbol(value) {
-    return ['*', '+', ':', '-', '<', '>', '=', '.'].includes(value);
+function isSpecialSymbol(str) {
+    const specialSymbols = ['*', '+', ':', '-', '<', '>', '=', '.', "'"];
+    
+    // Проходим по каждому символу строки
+    for (let char of str) {
+        if (specialSymbols.includes(char)) {
+            return true; // Если найден спецсимвол, возвращаем true
+        }
+    }
+    
+    return false; // Если спецсимволов нет, возвращаем false
 }
 
 // Функция для сравнения массивов

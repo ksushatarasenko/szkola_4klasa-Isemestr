@@ -49,32 +49,7 @@
 
 
 <!-- vidpovid do zadaczy  -->
-<div class="question-set" id="set108">
-    <div class="dialog primer zadacza">
-        <div class="colors italic">
-            <p class="p20"><b> Відповідь:</b> господиня законсервувула <input type="text"
-                    data-answer="20" class="line_6">л томатного соку.
-            </p>
-        </div>
-    </div>
-</div>
 
-<div class="flexbutton">
-    <div>
-        <button onclick="checkAnswersTrue('set108', 'smile-set108')">Check</button>
-    </div>
-    <div id="smile-set108" class="smile"></div>
-</div>
-
-<div class="hint2-container" onclick="toggleHint2(this)">
-    <div class="hint2-header"></div>
-    <div class="hint2-content">
-        <div class="image" style="width: 120%;margin-left: -10%;">
-            <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgf0QCfYrCmYLIrLIww?embed=1&width=740&height=84"
-                alt="otwet108">
-        </div>
-    </div>
-</div>
 <!-- end vipdpovid do zadaczy -->
 
 

@@ -103,13 +103,14 @@ function removeSpaces(value) {
 }
 
 
-// -----------
+// ------- stare l/lesso do 4 ----
 function checkAnswers(setId) {
     const set = document.getElementById(setId);
     const inputs = set.querySelectorAll('input[data-answer]');
+
     inputs.forEach(input => {
-        const correctAnswer = input.getAttribute('data-answer').toLowerCase();
-        const userAnswer = input.value.trim().toLowerCase();
+        const correctAnswer = normalizeAnswer(input.getAttribute('data-answer'));
+        const userAnswer = normalizeAnswer(input.value);
 
         if (userAnswer === correctAnswer) {
             input.classList.add('correct');
@@ -121,3 +122,32 @@ function checkAnswers(setId) {
     });
 }
 
+function normalizeAnswer(answer) {
+    return answer
+        .trim()
+        .replace(/\s+/g, ' ')            // Убираем лишние пробелы
+        .replace(/[’']/g, "'")           // Приводим апострофы к одному виду
+        .replace(/[.,!?;:]/g, '')        // Убираем знаки препинания
+        .toLowerCase();                  // Приводим к нижнему регистру
+}
+
+// Функция для проверки по нажатию Enter
+function handleKeyPress(event, setId) {
+    if (event.key === "Enter") {
+        event.preventDefault();  // Чтобы избежать переноса строки в input
+        checkAnswers(setId);     // Вызов проверки при нажатии Enter
+    }
+}
+
+// Добавляем событие на инпуты для проверки по Enter
+document.querySelectorAll('input[data-answer]').forEach(input => {
+    input.addEventListener('keydown', function(event) {
+        const questionSet = input.closest('.question-set'); // Ищем ближайший контейнер с классом question-set
+        if (questionSet && questionSet.id) {
+            handleKeyPress(event, questionSet.id); // Передаем реальный ID набора вопросов
+        }
+    });
+});
+
+
+// --------------------------

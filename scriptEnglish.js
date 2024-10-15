@@ -151,3 +151,22 @@ document.querySelectorAll('input[data-answer]').forEach(input => {
 
 
 // --------------------------
+// Функция для загрузки данных из localStorage для каждого textarea
+function loadTextareaData(id) {
+    const textarea = document.getElementById(id);
+    const savedText = localStorage.getItem(id);
+    if (savedText) {
+        textarea.value = savedText;
+    }
+
+    // Добавляем событие на изменение содержимого для сохранения данных
+    textarea.addEventListener('input', function() {
+        localStorage.setItem(id, textarea.value);
+    });
+}
+
+// Загружаем данные при загрузке страницы для каждого textarea
+window.onload = function() {
+    loadTextareaData('textarea1');
+}
+// }-----------------------------------------

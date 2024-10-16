@@ -228,3 +228,29 @@
 </div>
 
 <!-- end tablica umnogenie -->
+
+<!-- wybor otweta -->
+<div>
+    <div class="questions">
+        <div class="two_1">
+            <div>
+                <div>
+                    <div class="options italic blue">
+                        <div class="option" data-index="0">a. nowy | </div>
+                        <div class="option" data-index="1" style="text-decoration: underline;">
+                            &nbsp;niebieski | </div>
+                        <div class="option" data-index="2">&nbsp;stary </div>
+                    </div>
+                </div>
+                <div class="question" data-correct="2">
+                    <div class="options">
+                        <div class="option" data-index="0">b. zły | </div>
+                        <div class="option" data-index="1"> &nbsp;dobry | </div>
+                        <div class="option" data-index="2">&nbsp;duży </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="checkAnswers">Sprawdź</button>
+</div>

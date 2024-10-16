@@ -630,7 +630,7 @@ th {
    margin: 3%;
    width: 100%;
    font-size: 20px;
-   background-color: rgb(209, 236, 249);
+   /* background-color: rgb(209, 236, 249); */
    padding: 3%;
 }
 .vopros{
@@ -784,9 +784,10 @@ input {
    justify-content: flex-end;
 }
 /*  */
-.selected {
+.selected{
    text-decoration: underline;
-}
+   color: blue;
+ }
 
 .question {
    margin-top: 2%;

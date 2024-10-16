@@ -94,228 +94,221 @@
         <main class="main">
             <h1>English - </h1>
             <h2>№009 - Smart Junior 4, Unit 1, Test 1</h2>
-
-            <div class="image" style="width: 50%;">
-                <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfl99t2pFjoZ5CJnVQ?embed=1&width=1476&height=796"
-                    class="play-sound" data-audio="audio1" style="cursor: pointer;">
-                <audio id="audio1">
-                    <source src="./audio/SJ4-M1/iNewCan/media1.mp3" type="audio/mpeg">
-                </audio>
+            <div class="blockEnglish">
+                <div class="image" style="width: 70%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfl99t2pFjoZ5CJnVQ?embed=1&width=1476&height=796"
+                        class="play-sound" data-audio="audio1" style="cursor: pointer;">
+                    <audio id="audio1">
+                        <source src="./audio/SJ4-M1/iNewCan/media1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
             </div>
+
 
             <!-- test 1 -->
-            <h2>1. Write the nationalities.</h2>
-            <div class="question-set" id="set1">
-                <div class="dialog italic two">
-                    <div>
-                        <div class="colors">
-                            <p class="p20 italic ">1. the USA => <input type="text" data-answer="American"
-                                    class="line_2"></p>
-                        </div>
-                        <div class="colors">
-                            <p class="p20">2. the UK => <input type="text" data-answer="British" class="line_2"></p>
-                        </div>
-                        <div class="colors">
-                            <p class="p20 italic ">3. Mexico => <input type="text" data-answer="Mexican" class="line_2">
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="colors">
-                            <p class="p20 italic ">4. Ukraine => <input type="text" data-answer="Ukrainian"
-                                    class="line_2"></p>
-                        </div>
-                        <div class="colors">
-                            <p class="p20">5. China => <input type="text" data-answer="Chinese" class="line_2"></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Блок для вывода результата конкретного задания -->
-                <p id="result-set1" class="bal"></p>
-            </div>
-            <div class="flex">
-                <button onclick="checkAnswersBal('set1')">Check</button>
-                <button onclick="toggleHints('hints1')">answer</button>
-            </div>
-            <div>
-                <div id="hints1" style="display: none;">
-                    <p>1. American</p>
-                    <p>2. British</p>
-                    <p>3. Mexican</p>
-                    <p>4. Ukrainian</p>
-                    <p>5. Chinese</p>
-                </div>
-            </div>
-            <!-- 2 -->
-            <h2>2. Read and write. Use the adverbs of frequency and the verbs in brackets.</h2>
-            <p class="italic p16">Читать и писать. Используйте наречия частоты и глаголы в скобках.</p>
-            <div class="fonOrang" style="width: 50%;">
-                usually | always | never | sometimes
-            </div>
-            <div class="question-set" id="set2">
-                <div class="dialog italic ">
-                    <div class="colors" style="width: 120%;">
-                        <p class="p20 italic">1. Susan <img
-                                src="https://1drv.ms/i/s!Av5Voug-ar1Tgfobduwr96BssG_oTw?embed=1&width=454&height=168"
-                                alt="usually" class="aligned-img"> <input type="text" data-answer="usually goes"
-                                class="line_3"> (go) to the ice-skating rink on Sundays.</p>
-                    </div>
-                    <div class="colors">
-                        <p class="p20">2. The children <img
-                                src="https://1drv.ms/i/s!Av5Voug-ar1Tgfoc-EkP2eeW8AqLyw?embed=1&width=454&height=168"
-                                alt="usually" class="aligned-img" style="width: 7%;"> <input type="text"
-                                data-answer="sometimes play" class="line_3"> (play) chess at the weekend.</p>
-                    </div>
-                    <div class="colors">
-                        <p class="p20">3. ! <img
-                                src="https://1drv.ms/i/s!Av5Voug-ar1Tgfoav2rgthyNW59Qcw?embed=1&width=458&height=168"
-                                alt="usually" class="aligned-img"> <input type="text" data-answer="always swim"
-                                class="line_3"> (swim) in the summer.</p>
-                    </div>
-                    <div class="colors">
-                        <p class="p20">2. The children <img
-                                src="https://1drv.ms/i/s!Av5Voug-ar1TgfodaaXZBHO-0yGyDQ?embed=1&width=454&height=168"
-                                alt="usually" class="aligned-img" style="width: 7%;"> <input type="text"
-                                data-answer="never cooks" class="line_3"> (cook).</p>
-                    </div>
-                </div>
-                <p id="result-set2" class="bal"></p>
-            </div>
-            <div class="flex">
-                <button onclick="checkAnswersBal('set2')">Check</button>
-                <button onclick="toggleHints('hints2')">answer</button>
-            </div>
-            <div id="hints2" style="display: none;">
-                <p>1. usually goes</p>
-                <p>2. sometimes play</p>
-                <p>3. always swim</p>
-                <p>4. never cooks</p>
-            </div>
-           
-            <!-- 3 -->
-            <h2>3. Listen and match.</h2>
-            <p class="italic p16">Перетащите, чтобы составить правильные предложения:</p>
-            <div id="set3" class="question-set">
-                <!-- Три колонки для перетаскивания элементов -->
-                <div class="columnss">
-                    <div class="sortable-number">
-                        <div class="item" draggable="true">1</div>
-                        <div class="item" draggable="true">2</div>
-                        <div class="item" draggable="true">3</div>
-                    </div>
-                    <!-- Первая колонка: субъекты -->
-                    <div class="sortable-column" id="column-1">
-                        <div class="draggable-item" draggable="true" data-id="1">Jim</div>
-                        <div class="draggable-item" draggable="true" data-id="3">Paola</div>
-                        <div class="draggable-item" draggable="true" data-id="2">Kelly</div>
-                    </div>
-                    <!-- Вторая колонка: происхождение -->
-                    <div class="sortable-column" id="column-2">
-                        <div class="draggable-item" draggable="true" data-id="3">is from Brazil</div>
-                        <div class="draggable-item" draggable="true" data-id="1">is from the UK</div>
-                        <div class="draggable-item" draggable="true" data-id="2">is from the USA</div>
-                    </div>
-                    <!-- Третья колонка: действия -->
-                    <div class="sortable-column" id="column-3" style="width: 300px;">
-                        <div class="draggable-item" draggable="true" data-id="3">and plays basketball on Saturday.</div>
-                        <div class="draggable-item" draggable="true" data-id="2">and swims on Wednesday.</div>
-                        <div class="draggable-item" draggable="true" data-id="1">and plays chess on Sunday.</div>
-                    </div>
-                </div>
-                <!-- Блок для вывода результата -->
-                <div id="result-set3"></div>
-            </div>
-            <button onclick="checkOrder('set3')">Check</button>
-            <button onclick="toggleHints('hints3')">answer</button>
-          
-            <div id="hints3" style="display: none;">
-                <p>1. Jim is from the Uk and plays chess on Sunday.</p>
-                <p>2. Kelly is from the USA and swims on Wednesday.</p>
-                <p>3. Paola is from Brazil and plays basketball on Saturday.</p>
-            </div>
-            <!-- 4 -->
-
-            <h2>4. Look and write.</h2>
-            <div class="question-set" id="set4">
-                <div class="dialog italic ">
-                    <diw class="two">
+            <div class="blockEnglish">
+                <h2>1. Write the nationalities.</h2>
+                <div class="question-set" id="set1">
+                    <div class="dialog italic two">
                         <div>
                             <div class="colors">
-                                <p>1.</p>
-                                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfoeRVP9mlH-E78szQ?embed=1&width=847&height=615"
-                                    alt="exercise" style="width: 25%;">
-                                <p>What are you doing?</p>
-                                <p class="p20 italic "> <input type="text" data-answer="I’m exercising" class="line_3"></p>
+                                <p class="p20 italic ">1. the USA => <input type="text" data-answer="American"
+                                        class="line_2"></p>
                             </div>
                             <div class="colors">
-                                <p>2.</p>
-                                <img src="https://media.baamboozle.com/uploads/images/33439/1582153156_17920"
-                                    alt="exercise" style="width: 20%;">
-                                <p>What is she doing?</p>
-                                <p class="p20"><input type="text"
-                                        data-answer="She’s doing" class="line_3"> her homework.</p>
+                                <p class="p20">2. the UK => <input type="text" data-answer="British" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic ">3. Mexico => <input type="text" data-answer="Mexican"
+                                        class="line_2">
+                                </p>
                             </div>
                         </div>
                         <div>
                             <div class="colors">
-                                <p>3.</p>
-                                <img src="https://media.baamboozle.com/uploads/images/561924/1651054704_150773.png"
-                                    alt="He play football" style="width: 20%;">
-                                <p>What is he doing?</p>
-                                <p class="p20 italic "> <input type="text" data-answer="He’s playing" class="line_3"> football.</p>
+                                <p class="p20 italic ">4. Ukraine => <input type="text" data-answer="Ukrainian"
+                                        class="line_2"></p>
                             </div>
                             <div class="colors">
-                                <p>4.</p>
-                                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfofB4Xps0uP9FoEng?embed=1&width=578&height=470"
-                                    alt="They skateboarding" style="width: 25%;">
-                                <p>What is she doing?</p>
-                                <p class="p20"><input type="text"
-                                        data-answer="They’re skateboarding" class="line_3">.</p>
+                                <p class="p20">5. China => <input type="text" data-answer="Chinese" class="line_2"></p>
                             </div>
                         </div>
-                    </diw>
-                   
+                    </div>
+                    <!-- Блок для вывода результата конкретного задания -->
+                    <p id="result-set1" class="bal"></p>
                 </div>
-            </div>
-            <div class="flex">
-                <button onclick="checkAnswers('set4')">Check</button>
+                <div class="flex">
+                    <button onclick="checkAnswersBal('set1')">Check</button>
+                    <button onclick="toggleHints('hints1')">answer</button>
+                </div>
                 <div>
-                    <button onclick="toggleHints('hints4')">answer</button>
-                    <div id="hints4" style="display: none;">
-                        <p>1. I'm exercising</p>
-                        <p>2. She's doing</p>
-                        <p>3. He's playing</p>
-                        <p>4. They're skateboarding</p>
+                    <div id="hints1" style="display: none;">
+                        <p>1. American</p>
+                        <p>2. British</p>
+                        <p>3. Mexican</p>
+                        <p>4. Ukrainian</p>
+                        <p>5. Chinese</p>
                     </div>
                 </div>
             </div>
 
 
+            <!-- 2 -->
+            <div class="blockEnglish">
+                <h2>2. Read and write. Use the adverbs of frequency and the verbs in brackets.</h2>
+                <p class="italic p16">Читать и писать. Используйте наречия частоты и глаголы в скобках.</p>
+                <div class="fonOrang" style="width: 50%;">
+                    usually | always | never | sometimes
+                </div>
+                <div class="question-set" id="set2">
+                    <div class="dialog italic ">
+                        <div class="colors" style="width: 120%;">
+                            <p class="p20 italic">1. Susan <img
+                                    src="https://1drv.ms/i/s!Av5Voug-ar1Tgfobduwr96BssG_oTw?embed=1&width=454&height=168"
+                                    alt="usually" class="aligned-img"> <input type="text" data-answer="usually goes"
+                                    class="line_3"> (go) to the ice-skating rink on Sundays.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">2. The children <img
+                                    src="https://1drv.ms/i/s!Av5Voug-ar1Tgfoc-EkP2eeW8AqLyw?embed=1&width=454&height=168"
+                                    alt="usually" class="aligned-img" style="width: 7%;"> <input type="text"
+                                    data-answer="sometimes play" class="line_3"> (play) chess at the weekend.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">3. ! <img
+                                    src="https://1drv.ms/i/s!Av5Voug-ar1Tgfoav2rgthyNW59Qcw?embed=1&width=458&height=168"
+                                    alt="usually" class="aligned-img"> <input type="text" data-answer="always swim"
+                                    class="line_3"> (swim) in the summer.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">2. The children <img
+                                    src="https://1drv.ms/i/s!Av5Voug-ar1TgfodaaXZBHO-0yGyDQ?embed=1&width=454&height=168"
+                                    alt="usually" class="aligned-img" style="width: 7%;"> <input type="text"
+                                    data-answer="never cooks" class="line_3"> (cook).</p>
+                        </div>
+                    </div>
+                    <p id="result-set2" class="bal"></p>
+                </div>
+                <div class="flex">
+                    <button onclick="checkAnswersBal('set2')">Check</button>
+                    <button onclick="toggleHints('hints2')">answer</button>
+                </div>
+                <div id="hints2" style="display: none;">
+                    <p>1. usually goes</p>
+                    <p>2. sometimes play</p>
+                    <p>3. always swim</p>
+                    <p>4. never cooks</p>
+                </div>
+            </div>
 
+            <!-- 3 -->
+            <div class="blockEnglish">
+                <h2>3. Listen and match.</h2>
+                <p class="italic p16">Перетащите, чтобы составить правильные предложения:</p>
+                <audio src="./audio/SJ4-M1/test/002_TEST_01_ACT_3.wav" controls></audio>
+                <div id="set3" class="question-set">
+                    <!-- Три колонки для перетаскивания элементов -->
+                    <div class="columnss">
+                        <div class="sortable-number">
+                            <div class="item" draggable="true">1</div>
+                            <div class="item" draggable="true">2</div>
+                            <div class="item" draggable="true">3</div>
+                        </div>
+                        <!-- Первая колонка: субъекты -->
+                        <div class="sortable-column" id="column-1">
+                            <div class="draggable-item" draggable="true" data-id="1">Jim</div>
+                            <div class="draggable-item" draggable="true" data-id="3">Paola</div>
+                            <div class="draggable-item" draggable="true" data-id="2">Kelly</div>
+                        </div>
+                        <!-- Вторая колонка: происхождение -->
+                        <div class="sortable-column" id="column-2">
+                            <div class="draggable-item" draggable="true" data-id="3">is from Brazil</div>
+                            <div class="draggable-item" draggable="true" data-id="1">is from the UK</div>
+                            <div class="draggable-item" draggable="true" data-id="2">is from the USA</div>
+                        </div>
+                        <!-- Третья колонка: действия -->
+                        <div class="sortable-column" id="column-3" style="width: 300px;">
+                            <div class="draggable-item" draggable="true" data-id="3">and plays basketball on Saturday.
+                            </div>
+                            <div class="draggable-item" draggable="true" data-id="2">and swims on Wednesday.</div>
+                            <div class="draggable-item" draggable="true" data-id="1">and plays chess on Sunday.</div>
+                        </div>
+                    </div>
+                    <!-- Блок для вывода результата -->
+                    <div id="result-set3"></div>
+                </div>
+                <button onclick="checkOrder('set3')">Check</button>
+                <button onclick="toggleHints('hints3')">answer</button>
 
+                <div id="hints3" style="display: none;">
+                    <p>1. Jim is from the Uk and plays chess on Sunday.</p>
+                    <p>2. Kelly is from the USA and swims on Wednesday.</p>
+                    <p>3. Paola is from Brazil and plays basketball on Saturday.</p>
+                </div>
+            </div>
 
+            <!-- 4 -->
+            <div class="blockEnglish">
+                <h2>4. Look and write.</h2>
+                <div class="question-set" id="set4">
+                    <div class="dialog italic ">
+                        <diw class="two">
+                            <div>
+                                <div class="colors">
+                                    <p>1.</p>
+                                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfoeRVP9mlH-E78szQ?embed=1&width=847&height=615"
+                                        alt="exercise" style="width: 25%;">
+                                    <p>What are you doing?</p>
+                                    <p class="p20 italic "> <input type="text" data-answer="I’m exercising"
+                                            class="line_3">
+                                    </p>
+                                </div>
+                                <div class="colors">
+                                    <p>2.</p>
+                                    <img src="https://media.baamboozle.com/uploads/images/33439/1582153156_17920"
+                                        alt="exercise" style="width: 20%;">
+                                    <p>What is she doing?</p>
+                                    <p class="p20"><input type="text" data-answer="She’s doing" class="line_3"> her
+                                        homework.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="colors">
+                                    <p>3.</p>
+                                    <img src="https://media.baamboozle.com/uploads/images/561924/1651054704_150773.png"
+                                        alt="He play football" style="width: 20%;">
+                                    <p>What is he doing?</p>
+                                    <p class="p20 italic "> <input type="text" data-answer="He’s playing"
+                                            class="line_3">
+                                        football.</p>
+                                </div>
+                                <div class="colors">
+                                    <p>4.</p>
+                                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfofB4Xps0uP9FoEng?embed=1&width=578&height=470"
+                                        alt="They skateboarding" style="width: 25%;">
+                                    <p>What is she doing?</p>
+                                    <p class="p20"><input type="text" data-answer="They’re skateboarding"
+                                            class="line_3">.
+                                    </p>
+                                </div>
+                            </div>
+                        </diw>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    </div>
+                </div>
+                <div class="flex">
+                    <button onclick="checkAnswers('set4')">Check</button>
+                    <div>
+                        <button onclick="toggleHints('hints4')">answer</button>
+                        <div id="hints4" style="display: none;">
+                            <p>1. I'm exercising</p>
+                            <p>2. She's doing</p>
+                            <p>3. He's playing</p>
+                            <p>4. They're skateboarding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <!-- end -->
@@ -353,6 +346,7 @@
     <script src="../../script.js"></script>
     <script src="../../checkRadio.js"></script>
     <script src="../../querlySelector.js"></script>
+    <script src="../../scriptEnglish.js"></script>
 </body>
 
 </html>

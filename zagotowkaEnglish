@@ -1,38 +1,13 @@
-<div class="blockEnglish question-set" id="set22">
+<div class="question-set" id="set22">
     <p><span style="color: #ff00ff;"><strong>Exercise 2, p.4 <br> Read and write.</strong></span></p>
     <div class="dialog italic three">
-        <div>
-            <div class="image" style="width: 70%;">
-                <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfko6k17XfnPqYmHsQ?embed=1&width=886&height=598"
-                    alt="village1" style="cursor: pointer;" data-audio="audio21" class="play-sound">
-                <audio id="audio21">
-                    <source src="./audio/SJ4-M1/storiTimes/village.mp3" type="audio/mpeg">
-                </audio>
-            </div>
+      
             <div class="colors">
                 <p>1. We're from China.</p>
                 <p class="p20"> We're <input type="text" data-answer="village" class="line_2"></p>
             </div>
-        </div>
-        <div>
-            <div class="image" style="width: 70%;">
-                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkqGsk_IHgWntUIRQ?embed=1&width=922&height=770"
-                    alt="village1" style="cursor: pointer;" data-audio="audio21" class="play-sound">
-                <audio id="audio21">
-                    <source src="./audio/SJ4-M1/storiTimes/city.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <div class="colors">
                 <p class="p20 italic ">2. => <input type="text" data-answer="city" class="line_2"></p>
-            </div>
-        </div>
-        <div>
-            <div class="image" style="width: 70%;">
-                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfkpxMKfBGsbTbwEZA?embed=1&width=886&height=598"
-                    alt="village1" style="cursor: pointer;" data-audio="audio21" class="play-sound">
-                <audio id="audio21">
-                    <source src="./audio/SJ4-M1/storiTimes/town.mp3" type="audio/mpeg">
-                </audio>
             </div>
             <div class="colors">
                 <p class="p20 italic ">3. => <input type="text" data-answer="town" class="line_2"></p>
@@ -46,7 +21,7 @@
     <div class="hint2-container" onclick="toggleHint2(this)">
         <div class="hint2-header"></div>
         <div class="hint2-content">
-            <div class="image" style="width: 80%;">
+            <div>
                 <p>1. => village</p>
                 <p>2. => city</p>
                 <p>3. => town</p>

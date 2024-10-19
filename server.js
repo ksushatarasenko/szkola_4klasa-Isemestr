@@ -33,21 +33,22 @@ const CheckboxState = mongoose.model('CheckboxState', CheckboxStateSchema);
 // API для получения состояния чекбоксов
 app.get('/api/checkbox-state/:userId', async (req, res) => {
     const userId = req.params.userId;
-    console.log('Получен запрос на получение данных для:', userId); // Логируем запрос
+    console.log('Получен запрос на получение данных для:', userId);
 
     try {
-        const states = await CheckboxState.find({ userId });
-        console.log('Найдены состояния:', states); // Логируем найденные состояния
+        const states = await CheckboxState.find({userId});
+        console.log('Найдены состояния:', states);
         if (states.length === 0) {
-            console.log('Данные не найдены для userId:', userId); // Логируем, если данные не найдены
+            console.log('Данные не найдены для userId:', userId);
             return res.status(404).json({ message: 'Данные не найдены' });
         }
-        res.json(states); // Возвращаем найденные состояния
+        res.json(states);
     } catch (error) {
-        console.error('Ошибка при получении состояния:', error); // Логируем ошибку
+        console.error('Ошибка при получении состояния:', error);
         res.status(500).json({ error: 'Внутренняя ошибка сервера' });
     }
 });
+
 
 
 

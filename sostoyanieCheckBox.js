@@ -1,4 +1,13 @@
 
+async function handleCheckboxChange(lessonId, isChecked, userId) {
+    try {
+        await saveCheckboxState(lessonId, isChecked, userId);
+        console.log(`Состояние для урока ${lessonId} сохранено: ${isChecked}`);
+    } catch (error) {
+        console.error('Ошибка при сохранении состояния чекбокса:', error);
+    }
+}
+
 
 // Функция для сохранения состояния чекбоксов
 async function saveCheckboxState(lessonId, isChecked, userId) {
@@ -7,7 +16,7 @@ async function saveCheckboxState(lessonId, isChecked, userId) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ lessonId, isChecked, userId })
+        body: JSON.stringify({lessonId, isChecked, userId})
     });
 
     if (response.ok) {
@@ -22,9 +31,9 @@ async function saveCheckboxState(lessonId, isChecked, userId) {
 // 
 async function getCheckboxState(userId) {
     const response = await fetch(`https://szkola-4klasa-isemestr.onrender.com/api/checkbox-state/${userId}`);
-    
+
     if (!response.ok) {
-        console.error('Ошибка при получении состояния чекбоксов:', response.status);
+        console.error('Ошибка при получении состояния чекбоксов:', response.statusText);
         return;
     }
 
@@ -37,12 +46,10 @@ async function getCheckboxState(userId) {
     });
 }
 
+
 // Вызовите эту функцию при загрузке страницы
 window.onload = () => {
     getCheckboxState('userEnglish'); // Замените на реальный userId
 };
 
-if (!response.ok) {
-    console.error('Ошибка при получении состояния чекбоксов:', response.status);
-    return;
-}
+

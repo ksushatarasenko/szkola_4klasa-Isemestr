@@ -18,8 +18,8 @@ mongoose.connect('mongodb+srv://ksushatarasenko:ot3Xr63tpOrVvPs5@cluster0.nqqme.
 const CheckboxStateSchema = new mongoose.Schema({
     lessonId: String,
     isChecked: Boolean,
-    userId: String // Для разных пользователей
-});
+    userId: String
+  }, { versionKey: false });  // Отключаем поле __v
 
 const CheckboxState = mongoose.model('CheckboxState', CheckboxStateSchema);
 

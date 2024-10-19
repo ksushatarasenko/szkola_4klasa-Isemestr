@@ -2,7 +2,7 @@
 
 // Функция для сохранения состояния чекбоксов
 async function saveCheckboxState(lessonId, isChecked, userId) {
-    const response = await fetch(`https://my-checkbox-sync-project.onrender.com/api/save-checkbox-state`, {
+    const response = await fetch(`https://szkola-4klasa-isemestr.onrender.com/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ async function saveCheckboxState(lessonId, isChecked, userId) {
 
 // 
 async function getCheckboxState(userId) {
-    const response = await fetch(`https://my-checkbox-sync-project.onrender.com/api/checkbox-state/${userId}`);
+    const response = await fetch(`https://szkola-4klasa-isemestr.onrender.com/${userId}`);
     const states = await response.json();
     states.forEach(state => {
         const checkbox = document.getElementById(state.lessonId);
@@ -31,5 +31,5 @@ async function getCheckboxState(userId) {
 
 // Вызовите эту функцию при загрузке страницы
 window.onload = () => {
-    getCheckboxState('user123'); // Замените на реальный userId
+    getCheckboxState('userId'); // Замените на реальный userId
 };

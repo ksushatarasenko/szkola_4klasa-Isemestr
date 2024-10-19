@@ -254,3 +254,24 @@
     </div>
     <button id="checkAnswers">Sprawdź</button>
 </div>
+<!-- CheckBox -->
+<div id="taskUnit2SmartKids">
+    <div class="task italic p20">
+        <div>1. Kraj:</div>
+        <div class="p18"><input type="checkbox" name="question1" value="1">Czechy i Szwecja
+        </div>
+        <div class="p18"><input type="checkbox" name="question1" value="2">Polska i
+            Szwecja</label></div>
+        <div class="p18"><input type="checkbox" name="question1" value="3">Polska i
+            Czechy</label></div>
+    </div>
+    <div class="task italic p20">
+        <div>2. Język:</div>
+        <div class="p18"><input type="checkbox" name="question2" value="1">czeski i szwedzki
+        </div>
+        <div class="p18"><input type="checkbox" name="question2" value="2">polski i szwedzki</label></div>
+        <div class="p18"><input type="checkbox" name="question2" value="3">polski i czeski
+            </label></div>
+    </div>
+</div>
+<button onclick="checkCheckbox('taskUnit2SmartKids')">Chek</button>

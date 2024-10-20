@@ -73,7 +73,7 @@ async function getCheckboxState(userId) {
 // };
 
 window.onload = () => {
-    const userIds = ['userEnglish', 'userMath', 'userScience', 'userHistory', 'userGeography', 'userArt'];
+    const userIds = ['userEnglish', 'userMath', 'userInformatik', 'userReading', 'userUkrMova', 'userArt'];
     
     userIds.forEach(userId => {
         getCheckboxState(userId);

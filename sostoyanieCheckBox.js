@@ -1,3 +1,23 @@
+async function markLessonComplete(lessonId, userId) {
+    try {
+        await fetch(`https://szkola-4klasa-isemestr.onrender.com/api/save-checkbox-state`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                lessonId: lessonId,
+                isChecked: true,  // Урок отмечен как пройденный
+                userId: userId
+            })
+        });
+        alert("Урок отмечен как пройденный!");
+    } catch (error) {
+        console.error("Ошибка при сохранении состояния урока:", error);
+        alert("Не удалось сохранить состояние урока.");
+    }
+}
+
 
 async function handleCheckboxChange(lessonId, isChecked, userId) {
     try {
@@ -48,8 +68,14 @@ async function getCheckboxState(userId) {
 
 
 // Вызовите эту функцию при загрузке страницы
+// window.onload = () => {
+//     getCheckboxState('userEnglish'); // Замените на реальный userId
+// };
+
 window.onload = () => {
-    getCheckboxState('userEnglish'); // Замените на реальный userId
+    const userIds = ['userEnglish', 'userMath', 'userScience', 'userHistory', 'userGeography', 'userArt'];
+    
+    userIds.forEach(userId => {
+        getCheckboxState(userId);
+    });
 };
-
-

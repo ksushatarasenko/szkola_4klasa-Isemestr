@@ -685,6 +685,12 @@ button{
    width: 100px;
    height: 30px;
    text-align: center;
+   border-color: rgb(168, 250, 210);
+   cursor: pointer;
+   transition: transform 1.5s ease;
+}
+button:hover{
+   transform: scale(1.3);
 }
 .flexbutton{
    display: flex;
@@ -693,6 +699,17 @@ button{
    align-items: center;
    width: 90%;
    margin: 10px auto;
+}
+.btnEndLesson{
+   background-color: yellow;
+   width: 150px;
+   height: auto;
+   border-color: yellow;
+   font-size: 20px;
+   font-style: italic;
+   margin-left: 0 auto;
+   /* transition: transform 1.5s ease;
+   cursor: pointer; */
 }
 
 /* -------- END BUTTON ------------ */

@@ -131,6 +131,8 @@
                 <button type="button" onclick="checkAnswers()" >Відправити</button>
             </form>
             <p id="result"></p>
+
+            <button id="completeLesson" onclick="markLessonComplete('lessonTest2', 'userUkrMova')" class="btnEndLesson">урок пройденный</button>
             <script>
                 function checkAnswers() {
                     const form = document.getElementById('quiz-form');
@@ -164,6 +166,7 @@
                 }
             </script>
             <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+            <script src="../../sostoyanieCheckBox.js"></script>
         </main>
     </div>
 </body>

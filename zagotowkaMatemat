@@ -40,3 +40,65 @@
     <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-25', 'q25-result')">Chek</button>
     <p id="q25-result" style="width: 20%;"></p>
 </div>
+
+<!-- dilenna -->
+
+                    <table class="dialog primer" style="width: 100px;">
+                        <tr>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td>9</td>
+                            <td>2</td>
+                            <td style="border-left: 2px solid black; border-bottom: 2px solid black;">4</td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="8"
+                                    class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td style="border-left: 2px solid black;"><input type="text" data-answer="2" class="line_5">
+                            </td>
+                            <td><input type="text" data-answer="3" class="line_5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="1" class="line_5"></td>
+                            <td><input type="text" data-answer="2" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="1" class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="2" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="0" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+<!-- ---------- ---------- -->
+
+<div class="question-set" id="set60">
+    <div class="dialog primer">
+        <div class="colors">
+            <p class="p20">10 => <input type="text" data-answer="2" class="line_6"></p>
+        </div>
+        <div class="colors">
+            <p class="p20">15 => <input type="text" data-answer="3" class="line_6"></p>
+        </div>    
+    </div>
+</div>
+
+<div class="flexbutton">
+    <div>
+        <button onclick="checkAnswersTrue('set60', 'smile-set60')">Check</button>
+    </div>
+    <div id="smile-set60" class="smile"></div>                    
+</div>

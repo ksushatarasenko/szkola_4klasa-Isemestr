@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №16</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+
+        <main class="main">
+            <h1>Повторення вивченого у 3 класі. Письмове множення і ділення</h1>
+            <h2>№016 - Письмове ділення. <br>Обчислення периметра прямокутника. <br> Задачі на спільну роботу. (с.
+                31-32, № 165-173)</h2>
+            <!-- start -->
+            <div class="video">
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/uk/embed/cfcf241ab0ae4a35ae1330926dad6f6c?themeId=49&templateId=5&fontStackId=0"
+                    width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- 165 -->
+            <div class="blockZadanie">
+                <h4>165. Обчисли вирази.</h4>
+                <div class="question-set" id="set165">
+                    <div class="dialog primer two">
+                        <div>
+                            <div class="colors">
+                                <p class="p20">72 : 9 = <input type="text" data-answer="8" class="line_6"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">40 : 8 = <input type="text" data-answer="5" class="line_6"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">63 : 7 = <input type="text" data-answer="9" class="line_6"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="colors">
+                                <p class="p20">54 : 6 = <input type="text" data-answer="9" class="line_6"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">45 : 5 = <input type="text" data-answer="9" class="line_6"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">32 : 4 = <input type="text" data-answer="8" class="line_6"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbutton">
+                    <div>
+                        <button onclick="checkAnswersTrue('set165', 'smile-set165')">Check</button>
+                    </div>
+                    <div id="smile-set165" class="smile"></div>
+                </div>
+
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content">
+                        <div class="image">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJBKhXxFJdjGDZNkA?embed=1&width=966&height=110"
+                                alt="otwet165">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end 165 -->
+
+            <!-- 166 -->
+            <div class="blockZadanie">
+                <h4>166. Визнач, скільки в кожному числі всього сотень, усього десятків, усього одиниць.</h4>
+
+                <div class="question-set" id="set166">
+                    <table class="dialog primer">
+                        <tr>
+                            <th>Число</th>
+                            <th>555</th>
+                            <th>802</th>
+                            <th>360</th>
+                            <th>700</th>
+                            <th>910</th>
+                            <th>374</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Усього сотень</p>
+                            </td>
+                            <td><input type="text" data-answer="5" class="line_6"></td>
+                            <td><input type="text" data-answer="8" class="line_6"></td>
+                            <td><input type="text" data-answer="3" class="line_6"></td>
+                            <td><input type="text" data-answer="7" class="line_6"></td>
+                            <td><input type="text" data-answer="9" class="line_6"></td>
+                            <td><input type="text" data-answer="3" class="line_6"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Усього десятків</p>
+                            </td>
+                            <td><input type="text" data-answer="55" class="line_6"></td>
+                            <td><input type="text" data-answer="80" class="line_6"></td>
+                            <td><input type="text" data-answer="36" class="line_6"></td>
+                            <td><input type="text" data-answer="70" class="line_6"></td>
+                            <td><input type="text" data-answer="91" class="line_6"></td>
+                            <td><input type="text" data-answer="37" class="line_6"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Усього одиниць</p>
+                            </td>
+                            <td><input type="text" data-answer="555" class="line_6"></td>
+                            <td><input type="text" data-answer="802" class="line_6"></td>
+                            <td><input type="text" data-answer="360" class="line_6"></td>
+                            <td><input type="text" data-answer="700" class="line_6"></td>
+                            <td><input type="text" data-answer="910" class="line_6"></td>
+                            <td><input type="text" data-answer="374" class="line_6"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="flexbutton">
+                    <div>
+                        <button onclick="checkAnswersTrue('set166', 'smile-set166')">Check</button>
+                    </div>
+                    <div id="smile-set166" class="smile"></div>
+                </div>
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content">
+                        <div>
+                            <div class="image">
+                                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJCx3soC8b0B-bPPw?embed=1&width=1158&height=350"
+                                    alt="166">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- end 166 -->
+            <!-- 167 -->
+            <div class="blockZadanie">
+                <h4>167. Розглянь усне і письмове ді- лення трицифрового числа на одноцифрове.</h4>
+                <h5>942 : 6 = (600 + 300 + 42) : 6 = 600 : 6 + 300 : 6 + 42 : 6 = 100 + 50 + 7 = 157</h5>
+                <div class="two">
+                    <div>
+                        <div class="fonLightBlue">
+                            <h4>Визначаю кількість цифр у частці.</h4>
+                            <p class="p24">Для цього знаходжу перше неповне ділене. <br>
+                                Число 942 містить 9 сотень. <br>9 > 6. <br>9 — перше неповне ділене. <br> Отже, перша
+                                цифра частки позначатиме сотні, тому всього в частці буде 3 цифри.</p>
+                        </div>
+                        <div class="fonLightPink">
+                            <h4>Ділю сотні.</h4>
+                            <p class="p24">Поділю 9 на 6. У частці буде 1 сотня.</p>
+                            <p class="p24">Помножу: 1 · 6 = 6. Поділили 6 сотень.</p>
+                            <p class="p24">Відніму: 9 – 6 = 3. Залишилося поділити 3 сотні.</p>
+                            <p class="p24">Порівняю остачу з дільником: 3 < 6.</p>
+                                    <h4>Ділю десятки.</h4>
+                                    <p class="p24">3 сотні і 4 десятки — це 34 десятки (друге неповне ділене).</p>
+                                    <p class="p24">Поділю 34 на 6. У частці буде 5 десятків.</p>
+                                    <p class="p24">Помножу: 5 · 6 = 30. Поділили 30 десятків.</p>
+                                    <p class="p24">Відніму: 34 – 30 = 4. Залишилося поділити 4 десятки.</p>
+                                    <p class="p24">Порівняю остачу з дільником: 4 < 6.</p>
+                                            <h4>Ділю одиниці.</h4>
+                                            <p class="p24">4 десятки і 2 одиниці — це 42 одиниці (третє не- повне
+                                                ділене).</p>
+                                            <p class="blue p24">Продовж міркування самостійно.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image" style="width: 60%;margin-top: 30%;">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJDqog3TAmcuq2_Ug?embed=1&width=414&height=438"
+                                alt="167">
+                        </div>
+                    </div>
+                </div>
+                <h4>Читаю відповідь: 157.</h4>
+            </div>
+            <!-- end 167 -->
+            <!-- 168 -->
+            <div class="blockZadanie">
+                <h4>168. Виконай ділення письмово. Перевір множенням.</h4>
+                <div class="question-set flex" id="set168" style="margin-top: 3%;">
+                    <table class="dialog primer" style="width: 100px;">
+                        <tr>
+                            <td></td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td style="border-left: 2px solid black; border-bottom: 2px solid black;">4</td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="4"
+                                    class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td style="border-left: 2px solid black;"><input type="text" data-answer="1" class="line_5">
+                            </td>
+                            <td><input type="text" data-answer="2" class="line_5"></td>
+                            <td><input type="text" data-answer="8" class="line_5"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="1" class="line_5"></td>
+                            <td><input type="text" data-answer="1" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer=""
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="8"
+                                    class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="3" class="line_5"></td>
+                            <td><input type="text" data-answer="2" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer=""
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="3"
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="2"
+                                    class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="0" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <!-- 2 -->
+                    <table class="dialog primer" style="width: 100px;">
+                        <tr>
+                            <td></td>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td style="border-left: 2px solid black; border-bottom: 2px solid black;">3</td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="3"
+                                    class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td style="border-left: 2px solid black;"><input type="text" data-answer="1" class="line_5">
+                            </td>
+                            <td><input type="text" data-answer="6" class="line_5"></td>
+                            <td><input type="text" data-answer="5" class="line_5"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="1" class="line_5"></td>
+                            <td><input type="text" data-answer="9" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="1"
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="8"
+                                    class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="1" class="line_5"></td>
+                            <td><input type="text" data-answer="5" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer=""
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="1"
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="5"
+                                    class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="0" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table class="dialog primer" style="width: 100px;">
+                        <tr>
+                            <td></td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <td style="border-left: 2px solid black; border-bottom: 2px solid black;">3</td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                            <td style="border-bottom: 2px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="9"
+                                    class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td style="border-left: 2px solid black;"><input type="text" data-answer="3" class="line_5">
+                            </td>
+                            <td><input type="text" data-answer="2" class="line_5"></td>
+                            <td><input type="text" data-answer="5" class="line_5"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="0" class="line_5"></td>
+                            <td><input type="text" data-answer="7" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer=""
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="6"
+                                    class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="1" class="line_5"></td>
+                            <td><input type="text" data-answer="5" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer=""
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="1"
+                                    class="line_5"></td>
+                            <td style="border-bottom: 2px solid black;"><input type="text" data-answer="5"
+                                    class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" data-answer="" class="line_5"></td>
+                            <td><input type="text" data-answer="0" class="line_5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <h4>Зроби в зошиті письмово: 984 : 4 = </h4>
+                <div class="flexbutton">
+                    <div>
+                        <button onclick="checkAnswersTrue('set168', 'smile-set168')">Check</button>
+                    </div>
+                    <div id="smile-set168" class="smile"></div>
+                </div>
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content image">
+                        <div class="image">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJElPfGdY2q70wg6w?embed=1&width=752&height=494"
+                                alt="168">
+                        </div>
+                    </div>
+                </div>
+                <h4>Перевір множенням.</h4>
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content image">
+                        <div class="image">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJFWv5ium9ooIP4JQ?embed=1&width=422&height=446"
+                                alt="168-2">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end 168 -->
+            <!-- 169 -->
+            <div class="blockZadanie">
+                <h4>169. Обчисли виразию</h4>
+                <div class="question-set" id="set159">
+                    <div class="dialog primer">
+                        <div class="colors">
+                            <p class="p20">364 : 2 + 483 = <input type="text" data-answer="665" class="line_6"></p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">344 · 2 – 342 : 2 = <input type="text" data-answer="517" class="line_6"></p>
+                        </div>
+                        <div class="colors">
+                            <p class="p20">5 · (289 – 199) : 2 = <input type="text" data-answer="225" class="line_6">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexbutton">
+                    <div>
+                        <button onclick="checkAnswersTrue('set169', 'smile-set169')">Check</button>
+                    </div>
+                    <div id="smile-set169" class="smile"></div>
+                </div>
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content">
+                        <div class="image" style="width: 120%;">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJGK4TpI-qfzXKWXw?embed=1&width=630&height=242"
+                                alt="otwet169">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end 169 -->
+            <!-- 170 -->
+            <div class="blockZadanie">
+                <h4>170. Розв’яжи задачу, скориставшися схемою.</h4>
+                <div class="zadacza">
+                    <div class="image" style="width: 50%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJH7AOdwIh8Q7U8OQ?embed=1&width=1192&height=718"
+                            alt="sxema170">
+                    </div>
+                    <div class="two">
+                        <p class="p26" style="margin-top: 7%;">За восьмигодинну зміну перша тістомісильна машина замішує
+                            520 кг тіста, а друга — 320 кг. Скільки кілограмів тіста замісять обидві машини за 5 год,
+                            якщо працюватимуть разом?</p>
+                        <div class="image" style="width: 40%;">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJIkSHtV2QZ_3kPAg?embed=1&width=471&height=750"
+                                alt="тістомисильна машина">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"><p style="word-spacing: 1.1px;">Схема</p></div>
+                    <div class="hint2-content">
+                        <div class="image">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJJL20mH3UvObZkdQ?embed=1&width=820&height=656"
+                                alt="sxema170-2">
+                        </div>
+                    </div>
+                </div>
+                <p style="word-spacing: 1.1px;"><sup>План розв’язування</sup></p>
+                <p style="word-spacing: 1.1px;"><sup>1) Скільки кілограмів тіста замішує перша машина за 1 год?</sup></p>
+                <p style="word-spacing: 1.1px;"><sup>2) Скільки кілограмів тіста замішує друга машина за 1 год?</sup></p>
+                <p style="word-spacing: 1.1px;"><sup>3) Скільки всього кілограмів тіста замішують дві машини разом за 1 год?</sup></p>
+                <p style="word-spacing: 1.1px;"><sup>4) Скільки кілограмів тіста замісять обидві машини за 5 год?</sup></p>
+                <p style="word-spacing: 1.1px;">Розв’язання</p>
+                <div class="question-set" id="set170">
+                    <div class="dialog primer">
+                        
+                        <p style="word-spacing: 1.1px;"><span style="color: #0000ff;">1) <input type="text" data-answer="520" class="line_6"> : <input type="text" data-answer="8" class="line_6"> = <input type="text" data-answer="65" class="line_6"> (<input type="text" data-answer="кг" class="line_6">) – тіста замішує перша машина за 1 год (щогодини).</span></p>
+                        <p style="word-spacing: 1.1px;"><span style="color: #0000ff;">2) <input type="text" data-answer="320" class="line_6"> : <input type="text" data-answer="8" class="line_6"> = <input type="text" data-answer="40" class="line_6"> (<input type="text" data-answer="кг" class="line_6">) – тіста замішує друга машина за 1 год.</span></p>
+                        <p style="word-spacing: 1.1px;"><span style="color: #0000ff;">3) <input type="text" data-answer="65" class="line_6"> + <input type="text" data-answer="40" class="line_6"> = <input type="text" data-answer="105" class="line_6"> (<input type="text" data-answer="кг" class="line_6">) – всього тіста замішують дві машини разом за 1 год.</span></p>
+                        <p style="word-spacing: 1.1px;"><span style="color: #0000ff;">4) <input type="text" data-answer="105" class="line_6"> • <input type="text" data-answer="5" class="line_6"> = <input type="text" data-answer="525" class="line_6"> (<input type="text" data-answer="кг" class="line_6">) - тіста замісять дві машини разом за 5 год.</span></p>
+
+                        <p style="word-spacing: 1.1px;"><span style="color: #0000ff;">Відповідь: за п'ять годин дві машини разом замісять <input type="text" data-answer="525" class="line_6"> кг тіста.</span></p> 
+                    </div>
+                </div>
+                <div class="flexbutton">
+                    <div>
+                        <button onclick="checkAnswersTrue('set170', 'smile-set170')">Check</button>
+                    </div>
+                    <div id="smile-set170" class="smile"></div>
+                </div>
+
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content">
+                        <div class="image">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgoJKKizsy1ROmaAFcw?embed=1&width=1056&height=304"
+                                alt="otwet170">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end 170 -->
+
+            <!-- 171 -->
+
+            
+            
+            <!-- end 171 -->
+
+
+            <div class="footer"></div>
+
+        </main>
+    </div>
+    <script src="../../../scriptMatemat.js"></script>
+    <script src="../../../sostoyanieCheckBox.js"></script>
+</body>
+
+</html>

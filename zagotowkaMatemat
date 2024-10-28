@@ -102,3 +102,65 @@
     </div>
     <div id="smile-set60" class="smile"></div>                    
 </div>
+
+<!-- -------- Рівняння -->
+
+<div class="question-set" id="set104">
+    <div class="dialog primer">
+        <div class="three">
+            <div class="colors italic">
+                <p>у : 7 = 40</p>
+                <p class="p20"> y = <input type="text" data-answer="40*7" class="line_2">
+                </p>
+                <p class="p20"> y = <input type="text" data-answer="280" class="line_2">
+                </p>
+                <hr style="width: 200px; margin: 0 0 auto;">
+                <p class="p20"><input type="text" data-answer="280:7=40" class="line_1">
+                </p>
+                <p class="p20"> <input type="text" data-answer="40=40" class="line_1">
+                </p>
+            </div>
+            <div class="colors italic">
+                <p>с : 5 = 155</p>
+                <p class="p20"> c = <input type="text" data-answer="155*5" class="line_2">
+                </p>
+                <p class="p20"> c = <input type="text" data-answer="775" class="line_2">
+                </p>
+                <hr style="width: 200px; margin: 0 0 auto;">
+                <p class="p20"><input type="text" data-answer="775:5=155" class="line_1">
+                </p>
+                <p class="p20"> <input type="text" data-answer="155=155" class="line_1">
+                </p>
+            </div>
+            <div class="colors italic">
+                <p>а : 3 = 289</p>
+                <p class="p20"> a = <input type="text" data-answer="289*3" class="line_2">
+                </p>
+                <p class="p20"> a = <input type="text" data-answer="867" class="line_2">
+                </p>
+                <hr style="width: 200px; margin: 0 0 auto;">
+                <p class="p20"><input type="text" data-answer="867:3=289" class="line_1">
+                </p>
+                <p class="p20"> <input type="text" data-answer="289=289" class="line_1">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flexbutton">
+    <div>
+        <button onclick="checkAnswersTrue('set104', 'smile-set104')">Check</button>
+    </div>
+    <div id="smile-set104" class="smile"></div>
+</div>
+
+<div class="hint2-container" onclick="toggleHint2(this)">
+    <div class="hint2-header"></div>
+    <div class="hint2-content">
+        <div class="image">
+            <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgf0F8RVdtyJCm2s05g?embed=1&width=1048&height=360"
+                alt="otwet104">
+        </div>
+    </div>
+</div>

@@ -170,3 +170,53 @@ window.onload = function() {
     loadTextareaData('textarea1');
 }
 // }-----------------------------------------
+function checkAnswersLabel(formId, resultId) {
+    const form = document.getElementById(formId);
+    const questions = form.getElementsByClassName('question');
+    let score = 0;
+
+    for (let i = 0; i < questions.length; i++) {
+        const question = questions[i];
+        const correctAnswers = question.getAttribute('data-correct').split(',');
+        const selectedAnswers = Array.from(form.querySelectorAll(`input[name="q${i + 1}"]:checked`)).map(el => el.value);
+        
+        const resultElement = document.getElementById(resultId);
+
+        if (arraysEqual(selectedAnswers, correctAnswers)) {
+            score++;
+            resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
+        } else {
+            resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
+        }
+    }
+}
+
+// ------- Выбор ответа с выпадающего списка  -----
+
+function checkAnswersSelect(button) {
+    // Найдем контейнер, который содержит текущую кнопку
+    const container = button.closest('.select-container');
+    
+    // Получим все select элементы внутри этого контейнера
+    const selects = container.querySelectorAll('select');
+    
+    let allCorrect = true;
+    
+    selects.forEach(select => {
+        const correctAnswer = select.getAttribute('data-answer');
+        const selectedAnswer = select.value;
+
+        if (selectedAnswer === correctAnswer) {
+            select.classList.add('correct');
+            select.classList.remove('incorrect');
+        } else {
+            select.classList.add('incorrect');
+            select.classList.remove('correct');
+            allCorrect = false;
+        }
+    });
+
+    
+}
+
+//  ---------- end Выбор ответа с выпадающего списка --------------

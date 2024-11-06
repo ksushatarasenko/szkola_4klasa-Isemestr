@@ -57,3 +57,45 @@
 </div>
 <!--  -->
 <button id="completeLesson" onclick="markLessonComplete('lesson3', 'userEnglish')" class="btnEndLesson">урок пройденный</button>
+<!-- radio -->
+<div id="quiz-form-25">
+    <div class="questions">
+        <div class="question" data-correct="0,2,3,4,6,9">
+            <div class="displayFlex italic flexNowrap" style="margin-left: -7%;">
+                <label>
+                    <input type="checkbox" name="q1" value="0" /> 390
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="1" /> 45
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="2" /> 500
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="3" /> 70
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="4" /> 210
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="5" /> 5
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="6" /> 1000
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="7" /> 67
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="8" /> 555
+                </label>
+                <label>
+                    <input type="checkbox" name="q1" value="9" /> 10
+                </label>
+            </div>
+        </div>
+    </div>
+    <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-25', 'q25-result')">Chek</button>
+    <p id="q25-result" style="width: 20%;"></p>
+</div>
+

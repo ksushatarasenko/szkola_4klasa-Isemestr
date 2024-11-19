@@ -189,3 +189,20 @@ function checkAnswersSelect(button) {
 
 //  ---------- end Выбор ответа с выпадающего списка --------------
 
+// proverka napisania slova
+function checkAnswersWorld(setId) {
+    const set = document.getElementById(setId);
+    const inputs = set.querySelectorAll('input[data-answer]');
+    inputs.forEach(input => {
+        const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+        const userAnswer = input.value.trim().toLowerCase();
+
+        if (userAnswer === correctAnswer) {
+            input.classList.add('correct');
+            input.classList.remove('incorrect');
+        } else {
+            input.classList.add('incorrect');
+            input.classList.remove('correct');
+        }
+    });
+}

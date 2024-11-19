@@ -132,6 +132,9 @@ p{
 .p28{
    font-size: 28px;
 }
+.p34{
+   font-size: 34px;
+}
 .p38{
    font-size: 38px;
 }
@@ -777,6 +780,10 @@ button:hover{
 }
 .line_8{
    width: 65px;
+   font-size: 18px;
+}
+.line_9{
+   width: 180px;
    font-size: 18px;
 }
 /* ----------- END LINE --------------- */

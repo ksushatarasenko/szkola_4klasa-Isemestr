@@ -211,7 +211,13 @@ p{
    margin: 0 auto;
    width: 25%;
 }
-
+.pText{
+   text-align: center;
+   margin: 3px;
+}
+.pText h4{
+   margin-top: -3px;
+}
 
 /* FON */
 .fon{
@@ -875,8 +881,9 @@ input {
    justify-content: space-between;
    align-items: center;
    position: relative;
-   font-size: 16px;
-   color: #2d2d2d;
+   font-size: 18px;
+   font-weight: 600;
+   color: #553a3a;
 }
 
 /* Левый значок (иконка) через ::before */
@@ -1010,6 +1017,11 @@ input.line_5 {
 }
 input.line_5:focus {
    outline: 2px solid #00f; /* Синий фокус */
+}
+/* UL - LI */
+ul{
+   font-size: 20px;
+   margin-left: 10%;
 }
 
 

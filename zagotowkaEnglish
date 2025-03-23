@@ -29,7 +29,17 @@
         </div>
     </div>
 </div>
-<!--  -->
+<!-- tlumacz -->
+<div class="hint2-container" onclick="toggleHint2(this)">
+    <div class="hint2-header">transcription</div>
+    <div class="hint2-content">
+        <div>
+            <p>1. => village</p>
+            <p>2. => city</p>
+            <p>3. => town</p>
+        </div>
+    </div>
+</div>
 <!-- wybor otweta -->
 <div>
     <div class="questions">

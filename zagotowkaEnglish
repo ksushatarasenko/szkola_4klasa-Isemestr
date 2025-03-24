@@ -108,4 +108,45 @@
     <button class="checkAnswers" onclick="checkAnswersLabel('quiz-form-25', 'q25-result')">Chek</button>
     <p id="q25-result" style="width: 20%;"></p>
 </div>
+<!-- vybor 3 woprosow -->
+<div>
+    <div id="task0502" style="margin-left: 100px; width: 80%;">
+        <div class="task">
+            <div class="options">
+                <div class="flexColumn ">
+                    <div class="textRadio">
+                        <p class="p20">1. How can the children get to the zoo? </p>
+                    </div>
+                    <label><input type="radio" name="question1" value="1"> By bus.   </label>
+                    <label><input type="radio" name="question1" value="2"> By train.</label>
+                </div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="options">
+                <div class="flexColumn">
+                    <div class="textRadio">
+                        <p class="p20">2. What time does the bus arrive at the bus stop? </p>
+                    </div>
+                    <label><input type="radio" name="question2" value="1"> It arrives at 10.10 </label>
+                    <label><input type="radio" name="question2" value="2"> It arrives at 10.05.
+
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="options">
+                <div class="flexColumn">
+                    <div class="textRadio">
+                        <p class="p20">3. What time does the bus leave the bus stop? </p>
+                    </div>
+                    <label><input type="radio" name="question3" value="1"> It leaves at 10.05.      </label>
+                    <label><input type="radio" name="question3" value="2"> It leaves at 10.10.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="checkRadio('task0502')">Chek</button>
+</div>
 

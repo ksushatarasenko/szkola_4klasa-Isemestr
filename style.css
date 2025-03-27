@@ -1019,7 +1019,7 @@ input.line_5:focus {
    outline: 2px solid #00f; /* Синий фокус */
 }
 /* UL - LI */
-ul{
+ul, ol{
    font-size: 20px;
    margin-left: 10%;
 }

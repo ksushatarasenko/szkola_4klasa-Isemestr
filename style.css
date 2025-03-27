@@ -86,17 +86,20 @@ h3{
    margin-top: 2%;
    color: rgb(125, 45, 125);
    padding: 0 3%;
+   text-align: center;
 }
 h4{
    font-size: 22px; 
    margin-top: 2%;
    color: rgb(64, 122, 30);
    padding: 0 3%;
+   text-align: center;
 }
 h5{
    font-size: 20px;
    color: rgb(83, 79, 79);
    margin-top: 2%;
+   text-align: center;
 }
 .p{
    font-size: 26px;

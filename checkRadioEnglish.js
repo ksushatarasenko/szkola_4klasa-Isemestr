@@ -35,6 +35,15 @@ function checkRadio(taskId) {
             question2: '2',
             question3: '1',
             question4: '2'
+        },
+        // Unit6
+        task0604:{
+            question1: '1',
+            question2: '2',
+            question3: '2',
+            question4: '1',
+            question5: '1',
+            question6: '1',
         }
 
         

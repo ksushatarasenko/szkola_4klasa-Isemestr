@@ -388,6 +388,9 @@ p{
    flex-wrap: wrap;
    width: 100%;
  }
+ label>input{
+   width: 30px;
+ }
  /* ===== FOOTER ========= */
  .footer{
     display: flex;

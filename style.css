@@ -828,6 +828,33 @@ input {
    justify-content: space-between;
    
 }
+/*  */
+
+
+
+.option {
+   padding: 5px;
+   margin: 5px;
+   border: 1px solid #ccc;
+   cursor: pointer;
+   display: inline-block;
+   border-radius: 5px;
+}
+
+.option.selected {
+   background-color: lightblue; /* Синий при выборе */
+}
+
+.option.correct {
+   background-color: lightgreen; /* Зеленый для правильного ответа */
+}
+
+.option.incorrect {
+   background-color: lightcoral; /* Красный для неправильного ответа */
+}
+
+
+/*  */
 
 .boxRadio{
    margin-right: 1px;

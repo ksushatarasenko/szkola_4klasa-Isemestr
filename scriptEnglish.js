@@ -103,7 +103,43 @@ function removeSpaces(value) {
 }
 
 
-// ------- stare l/lesso do 4 ----
+// ------- wopros s wyborom 3 wariantow otwetow ----
+document.addEventListener("DOMContentLoaded", function () {
+    const questions = document.querySelectorAll(".question");
+
+    questions.forEach(question => {
+        const options = question.querySelectorAll(".option");
+
+        options.forEach(option => {
+            option.addEventListener("click", function () {
+                // Убираем "selected" только у вариантов внутри этого вопроса
+                options.forEach(opt => opt.classList.remove("selected"));
+                
+                // Добавляем "selected" к выбранному варианту
+                this.classList.add("selected");
+            });
+        });
+    });
+
+    document.getElementById("checkAnswers").addEventListener("click", function () {
+        questions.forEach(question => {
+            const correctIndex = question.getAttribute("data-correct");
+            const selectedOption = question.querySelector(".option.selected");
+
+            if (selectedOption) {
+                const userIndex = selectedOption.getAttribute("data-index");
+
+                if (userIndex === correctIndex) {
+                    selectedOption.classList.add("correct");  // Зеленый для правильного
+                } else {
+                    selectedOption.classList.add("incorrect"); // Красный для неправильного
+                }
+            }
+        });
+    });
+});
+
+// script prowerki inputa
 function checkAnswers(setId) {
     const set = document.getElementById(setId);
     const inputs = set.querySelectorAll('input[data-answer]');
@@ -121,7 +157,7 @@ function checkAnswers(setId) {
         }
     });
 }
-
+// end script prowerki inputa
 function normalizeAnswer(answer) {
     return answer
         .trim()

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Меню на 7 дней</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fffaf3;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #ff7f50;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    nav button {
+      background: #ffdab9;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    nav button.active {
+      background: #ffa07a;
+      font-weight: bold;
+      color: white;
+    }
+
+    .day-content {
+      display: none;
+      padding: 1rem 2rem;
+    }
+
+    .day-content.active {
+      display: block;
+    }
+
+    .meal {
+      background: #fff;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .meal h3 {
+      margin: 0 0 0.3rem 0;
+      color: #b35c00;
+    }
+
+    .meal p {
+      margin: 0.2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Меню на 7 дней (Анемия + Щитовидка + Холестерин)</header>
+  <nav id="dayNav">
+    <button onclick="showDay(0)" class="active">Пн</button>
+    <button onclick="showDay(1)">Вт</button>
+    <button onclick="showDay(2)">Ср</button>
+    <button onclick="showDay(3)">Чт</button>
+    <button onclick="showDay(4)">Пт</button>
+    <button onclick="showDay(5)">Сб</button>
+    <button onclick="showDay(6)">Вс</button>
+    <button onclick="showDay(7)">Добавки</button>
+
+  </nav>
+
+  <main>
+    <div id="days"></div>
+  </main>
+
+  <script>
+    const mealData = [
+      {
+        day: "Понедельник",
+        meals: [
+          { title: "Завтрак", desc: "Овсянка на воде, черника, мёд, семена льна" },
+          { title: "Перекус", desc: "Яблоко, 5 миндальных орехов" },
+          { title: "Обед", desc: "Гречка, куриная грудка, салат из моркови и яблока" },
+          { title: "Полдник", desc: "Цельнозерновой хлеб с хумусом" },
+          { title: "Ужин", desc: "Запечённые овощи и лосось" }
+        ],
+        image: "/images/monday.jpg",
+        recipe: "1. Сварить овсянку\n2. Добавить мёд и ягоды\n3. Посыпать льном"
+      },
+      {
+        day: "Вторник",
+        meals: [
+          { title: "Завтрак", desc: "Омлет с зеленью, цельнозерновой тост" },
+          { title: "Перекус", desc: "Банан" },
+          { title: "Обед", desc: "Чечевичный суп, салат со свёклой" },
+          { title: "Полдник", desc: "Йогурт и чиа" },
+          { title: "Ужин", desc: "Тушёная капуста, варёное яйцо, картофель" }
+        ], 
+        image: "/images/tuesday.jpg",
+    recipe: "1. Взбить яйца с зеленью\n2. Обжарить на сковороде\n3. Подавать с тостом"
+      },
+      {
+        day: "Среда",
+        meals: [
+          { title: "Завтрак", desc: "Пшённая каша с грушей и корицей" },
+          { title: "Перекус", desc: "Апельсин" },
+          { title: "Обед", desc: "Индейка тушёная, перловка, тушёные кабачки" },
+          { title: "Полдник", desc: "Овсяное печенье без сахара" },
+          { title: "Ужин", desc: "Омлет с брокколи" }
+        ], image: "/images/wednesday.jpg",
+    recipe: "1. Отварить просо\n2. Нарезать грушу, добавить в кашу\n3. Посыпать корицей"
+      },
+      {
+        day: "Четверг",
+        meals: [
+          { title: "Завтрак", desc: "Творог с мёдом и ягодами" },
+          { title: "Перекус", desc: "Мандарин, орехи" },
+          { title: "Обед", desc: "Томатный суп с чечевицей, хлеб" },
+          { title: "Полдник", desc: "Морковные палочки и хумус" },
+          { title: "Ужин", desc: "Скумбрия, рис, салат" }
+        ]
+      },
+      {
+        day: "Пятница",
+        meals: [
+          { title: "Завтрак", desc: "Овсянка с яблоком и корицей" },
+          { title: "Перекус", desc: "Шиповник, грецкий орех" },
+          { title: "Обед", desc: "Гречка, говядина, капуста" },
+          { title: "Полдник", desc: "Натуральный йогурт" },
+          { title: "Ужин", desc: "Пюре, отварная рыба, салат" }
+        ]
+      },
+      {
+        day: "Суббота",
+        meals: [
+          { title: "Завтрак", desc: "Яйца, авокадо, хлеб" },
+          { title: "Перекус", desc: "Смузи (банан+шпинат)" },
+          { title: "Обед", desc: "Суп из брокколи, тост" },
+          { title: "Полдник", desc: "Варёное яйцо" },
+          { title: "Ужин", desc: "Куриная грудка, рис, салат" }
+        ]
+      },
+      {
+        day: "Воскресенье",
+        meals: [
+          { title: "Завтрак", desc: "Омлет с грибами и шпинатом" },
+          { title: "Перекус", desc: "Фрукт, чай" },
+          { title: "Обед", desc: "Киноа, тушёные овощи, фасоль" },
+          { title: "Полдник", desc: "Финики и миндаль" },
+          { title: "Ужин", desc: "Рыба на пару, салат, картофель" }
+        ]
+      },
+      {
+        day: "Добавки",
+        meals: [
+          { title: "Железо", desc: "(Sorbifer, Hemofer, Tardyferon): утром натощак с соком" },
+          { title: "Витамин D3", desc: "(Vigantol, D-Vitum Forte 2000, Devikap): с жирной пищей, в обед" },
+          { title: "Омега-3", desc: " (Gold Omega-3, Doppelherz Omega-3): во время еды" },
+          { title: "Селен + Цинк", desc: "(Solgar Selenium + Zinc, Olimp Labs): после еды, утром" },
+          { title: "Магний + B6", desc: "(Magnesium B6 Forte Olimp): вечером" },
+          { title: "Витамин B12", desc: "(Jarrow Methyl B12, Solgar B12): утром под язык, курсами" }
+        ]
+      }
+    ];
+
+    const container = document.getElementById("days");
+    mealData.forEach((day, i) => {
+      const div = document.createElement("div");
+      div.className = "day-content" + (i === 0 ? " active" : "");
+      div.id = "day" + i;
+      div.innerHTML = "<h2>" + day.day + "</h2>" + day.meals.map(meal =>
+        `<div class="meal"><h3>${meal.title}</h3><p>${meal.desc}</p></div>`
+      ).join("");
+      container.appendChild(div);
+    });
+
+    function showDay(index) {
+      document.querySelectorAll('.day-content').forEach((el, i) => {
+        el.classList.toggle('active', i === index);
+      });
+      document.querySelectorAll('nav button').forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+    }
+  </script>
+</body>
+
+</html>

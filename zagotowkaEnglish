@@ -45,25 +45,61 @@
     <div class="questions">
         <div class="two_1">
             <div>
-                <div>
-                    <div class="options italic blue">
-                        <div class="option" data-index="0">a. nowy | </div>
-                        <div class="option" data-index="1" style="text-decoration: underline;">
-                            &nbsp;niebieski | </div>
-                        <div class="option" data-index="2">&nbsp;stary </div>
+                <div class="question" data-correct="1" style="width: 70%;margin: 0;padding: 0;">
+                    <div class="options"  style="justify-content: left;">1. You
+                        <div class="option" data-index="0"style="width: 10%;">should</div>
+                        <div class="option" data-index="1" style="width: 15%;">shouldn’t</div>
+                        touch the oven when it’s hot.
                     </div>
                 </div>
-                <div class="question" data-correct="2">
-                    <div class="options">
-                        <div class="option" data-index="0">b. zły | </div>
-                        <div class="option" data-index="1"> &nbsp;dobry | </div>
-                        <div class="option" data-index="2">&nbsp;duży </div>
+                <div class="question" data-correct="1" style="width: 70%;margin: 0;padding: 0;">
+                    <div class="options" style="justify-content: left;">2. You
+                        <div class="option" data-index="0"style="width: 10%;">should</div>
+                        <div class="option" data-index="1" style="width: 15%;">shouldn’t</div>
+                        sit too close to the fireplace.
                     </div>
                 </div>
+                <div class="question" data-correct="0" style="width: 70%;margin: 0;padding: 0;">
+                    <div class="options" style="justify-content: left;">3. You
+                        <div class="option" data-index="0"style="width: 10%;">should</div>
+                        <div class="option" data-index="1" style="width: 15%;">shouldn’t</div>
+                        walk up and down the stairs.
+                    </div>
+                </div>
+                <div class="question" data-correct="1" style="width: 70%;margin: 0;padding: 0;">
+                    <div class="options" style="justify-content: left;">4. You
+                        <div class="option" data-index="0"style="width: 10%;">should</div>
+                        <div class="option" data-index="1" style="width: 15%;">shouldn’t</div>
+                        play with matches. 
+                    </div>
+                </div>
+                <div class="question" data-correct="0" style="width: 70%;margin: 0;padding: 0;">
+                    <div class="options" style="justify-content: left;">5. You
+                        <div class="option" data-index="0"style="width: 10%;">should</div>
+                        <div class="option" data-index="1" style="width: 15%;">shouldn’t</div>
+                        be careful with knives. 
+                    </div>
+                </div>
+                <div class="question" data-correct="1" style="width: 70%;margin: 0;padding: 0;">
+                    <div class="options" style="justify-content: left;">6. You
+                        <div class="option" data-index="0"style="width: 10%;">should</div>
+                        <div class="option" data-index="1" style="width: 15%;">shouldn’t</div>
+                        play with sockets.
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <button id="checkAnswers">Sprawdź</button>
+    <button id="checkAnswers">Check</button>
+    <div class="hint2-container" onclick="toggleHint2(this)">
+        <div class="hint2-header">transcription</div>
+        <div class="hint2-content">
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgp9MoF72L45v8eOEfA?embed=1&width=1664&height=784" alt="">
+            </div>
+        </div>
+    </div>
 </div>
 <!--  -->
 <button id="completeLesson" onclick="markLessonComplete('lesson3', 'userEnglish')" class="btnEndLesson">урок пройденный</button>
